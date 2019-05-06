@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export class Navbar extends React.Component {
 	render() {
 		return (
-			<nav className="navbar navbar-light bg-light">
+			<nav className="navbar navbar-dark bg-dark">
 				<Link to="/">
 					<span className="navbar-brand h1">Andy Martinez</span>
 				</Link>
