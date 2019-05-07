@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, FormGroup, Label, Input, Button } from "reactstrap";
+import { Form, FormGroup, Input, Button } from "reactstrap";
 import { Context } from "../store/appContext.js";
 
 export default class Contact extends React.Component {
@@ -27,13 +27,12 @@ export default class Contact extends React.Component {
 				{({ store, actions }) => {
 					return (
 						<div
-							className="container text-center border"
+							className="container"
 							style={{
 								width: "400px"
 							}}>
 							<Form onSubmit={actions.handleFormSubmit}>
 								<FormGroup>
-									<Label htmlFor="name">Name:</Label>
 									<Input
 										style={{
 											width: "300px",
@@ -52,7 +51,6 @@ export default class Contact extends React.Component {
 								</FormGroup>
 
 								<FormGroup>
-									<Label htmlFor="email">email:</Label>
 									<Input
 										style={{
 											width: "300px",
@@ -70,16 +68,21 @@ export default class Contact extends React.Component {
 									/>
 								</FormGroup>
 								<FormGroup>
-									<Label for="message">Message</Label>
 									<Input
 										style={{
 											width: "300px",
-											height: "200px",
+											height: "100px",
 											margin: "0 auto"
 										}}
 										type="textarea"
 										name="message"
-										id="message"
+										ref={this.message}
+										placeholder="Tell me something"
+										onChange={e =>
+											this.setState({
+												message: e.target.value
+											})
+										}
 									/>
 								</FormGroup>
 								<div className="text-center pb-2">

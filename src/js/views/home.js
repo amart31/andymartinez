@@ -4,6 +4,7 @@ import "../../styles/home.scss";
 
 import About from "../component/about";
 import Contact from "../component/contact";
+import Projects from "../component/projects";
 
 export class Home extends React.Component {
 	// componentDidmount(){
@@ -13,25 +14,22 @@ export class Home extends React.Component {
 		return (
 			<React.Fragment>
 				<HeroView />
-
-				<About />
-
 				<div className="row">
 					<div className="col text-center">
-						<h2>Projects</h2>
-						<h5>Title description, Dec 7, 2017</h5>
-						<div className="fakeimg">Fake Image</div>
-						<p>Some text..</p>
-						<p>
-							Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco.
-						</p>
+						<About />
 					</div>
 				</div>
 				<div className="row">
 					<div className="col text-center">
+						<h2>Projects</h2>
+						<hr />
+						<Projects />
+					</div>
+				</div>
+				<div className="row mb-3">
+					<div className="col text-center">
 						<h2>Contact</h2>
+						<hr />
 						<Contact />
 					</div>
 				</div>

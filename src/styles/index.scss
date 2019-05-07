@@ -93,6 +93,21 @@ html {
         margin-bottom: 0;
     }
 }
+
+.projectCard:hover {
+            border: 2px solid #d9d9d9;
+            transition: all 0.3s ease;
+            box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+        }
+.avatar:hover {
+            border: 2px solid #d9d9d9;
+            transition: all 0.3s ease;
+            box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+        }        
+.card-img {
+    object-fit: scale;
+}        
+
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         float: left;

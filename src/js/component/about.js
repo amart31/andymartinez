@@ -12,26 +12,25 @@ export default class About extends React.Component {
 	render() {
 		return (
 			<div id="about-container" className="content-containers container text-center mt-5">
-				<h1>About</h1>
-				<hr />
+				<h1 className="text-secondary">About</h1>
 				<div className="row mt-5">
 					<div className="col-6 col-sm-6 col-md-3">
-						<i className="fab fa-react fa-5x" />
+						<i className="fab fa-react fa-5x text-info" />
 
 						<h4>React</h4>
 					</div>
 					<div className="col-6 col-sm-6 col-md-3">
-						<i className="fab fa-js-square fa-5x" />
+						<i className="fab fa-js-square fa-5x text-info" />
 
 						<h4>Vanilla Js</h4>
 					</div>
 					<div className="col-6 col-sm-6 col-md-3">
-						<i className="fab fa-html5 fa-5x" />
+						<i className="fab fa-html5 fa-5x text-info" />
 
 						<h4>HTML</h4>
 					</div>
 					<div className="col-6 col-sm-6 col-md-3">
-						<i className="fab fa-wordpress-simple fa-5x" />
+						<i className="fab fa-wordpress-simple fa-5x text-info" />
 
 						<h4>Wordpress</h4>
 					</div>
@@ -40,7 +39,7 @@ export default class About extends React.Component {
 				<div className="row" style={{ marginTop: 3 + "rem" }}>
 					<div className="col-12 col-lg-6 hidden">
 						<img
-							className="img-fluid"
+							className="img-fluid avatar"
 							src={avatar}
 							style={{
 								borderRadius: 50 + "%",
