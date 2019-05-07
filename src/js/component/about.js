@@ -50,27 +50,27 @@ export default class About extends React.Component {
 						<p className="mytext pt-3">Web Developer from Miami, FL.</p>
 					</div>
 					<div className="col-12 col-sm-12 col-md-12 col-lg-6 ">
-						<Progress animated color="info" value={80}>
+						<Progress animated color="info" value={85} className="skills-progress">
 							React
 						</Progress>
 						<br />
-						<Progress animated color="info" value={85}>
+						<Progress animated color="info" value={85} className="skills-progress">
 							JavaScript
 						</Progress>
 						<br />
-						<Progress animated color="info" value={80}>
+						<Progress animated color="info" value={87} className="skills-progress">
 							HTML
 						</Progress>
 						<br />
-						<Progress animated color="info" value={80}>
+						<Progress animated color="info" value={83} className="skills-progress">
 							CSS
 						</Progress>
 						<br />
-						<Progress animated color="info" value={75}>
+						<Progress animated color="info" value={76} className="skills-progress">
 							WordPress
 						</Progress>
 						<br />
-						<Progress animated color="info" value={70}>
+						<Progress animated color="info" value={70} className="skills-progress">
 							PHP
 						</Progress>
 						<br />

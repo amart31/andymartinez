@@ -165,6 +165,19 @@ class Projects extends React.Component {
 						</div>
 					</div>
 				</div>
+				<div className="row mt-5">
+					<div className="col d-inline-flex text-primary px-5 pt-2">
+						<Link to="/all/">
+							<span>
+								<i className="fas fa-code" />
+								&nbsp;
+							</span>
+							<span>
+								<p>See More</p>
+							</span>
+						</Link>
+					</div>
+				</div>
 			</div>
 		);
 	}
