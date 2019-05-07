@@ -13,6 +13,7 @@ export default class About extends React.Component {
 		return (
 			<div id="about-container" className="content-containers container text-center mt-5">
 				<h1>About</h1>
+				<hr />
 				<div className="row mt-5">
 					<div className="col-6 col-sm-6 col-md-3">
 						<i className="fab fa-react fa-5x" />
@@ -35,8 +36,8 @@ export default class About extends React.Component {
 						<h4>Wordpress</h4>
 					</div>
 				</div>
-
-				<div className="row" style={{ marginTop: 7 + "rem" }}>
+				<hr />
+				<div className="row" style={{ marginTop: 3 + "rem" }}>
 					<div className="col-12 col-lg-6 hidden">
 						<img
 							className="img-fluid"
@@ -82,14 +83,10 @@ export default class About extends React.Component {
 }
 
 Progress.propTypes = {
-	multi: PropTypes.bool,
-	bar: PropTypes.bool, // used in combination with multi
 	tag: PropTypes.string,
 	value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 	max: PropTypes.oneOf([PropTypes.string, PropTypes.number]),
 	animated: PropTypes.bool,
-	striped: PropTypes.bool,
 	color: PropTypes.string,
-	className: PropTypes.string,
-	barClassName: PropTypes.string // used to add class to the inner progress-bar element
+	className: PropTypes.string
 };

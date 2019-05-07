@@ -3,6 +3,7 @@ import HeroView from "../component/heroView";
 import "../../styles/home.scss";
 
 import About from "../component/about";
+import Contact from "../component/contact";
 
 export class Home extends React.Component {
 	// componentDidmount(){
@@ -26,6 +27,12 @@ export class Home extends React.Component {
 							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco.
 						</p>
+					</div>
+				</div>
+				<div className="row">
+					<div className="col text-center">
+						<h2>Contact</h2>
+						<Contact />
 					</div>
 				</div>
 
