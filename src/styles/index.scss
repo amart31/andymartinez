@@ -22,6 +22,18 @@ html {
     font-weight: 400;
 }
 
+.navbar-brand {
+     background: -webkit-linear-gradient(#076585, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fab {
+     background: -webkit-linear-gradient(#de6161, #2657eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
@@ -39,18 +51,26 @@ html {
 
 .intro-message > h1 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    opacity: 1;
     font-size: 5em;
+    
+     background: -webkit-linear-gradient(#E0EAFC, #CFDEF3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .intro-divider {
     width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    opacity: 0.6;
+    color: #CFDEF3;
+    border-top: 2px solid #CFDEF3;
+    border-bottom: 1px solid #CFDEF3;
 }
 
 .intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    opacity: 1;
+    color: #CFDEF3;
+     
 }
 
 @media(max-width:767px) {
@@ -117,6 +137,38 @@ html {
     
             transition: all 0.3s ease;
             box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+}
+.jumbo-footer{
+    margin: 0;
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+}
+
+.projects-sec {
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+}
+.contact-sec {
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+}
+.about-sec {
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+}
+
+.project-body{
+    opacity: 0.7;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+}
+
+ul {
+  list-style-type: none;
+ 
+}
+
+.resume-header {
+    
+    text-align: center;
+    color: #f8f8f8;
+    background: linear-gradient(to right, #076585, #fff);
+    background-size: 100%;
 }
 
 

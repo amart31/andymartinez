@@ -62,11 +62,11 @@ class Projects extends React.Component {
 									src={instagramBstrap}
 									alt="Card image cap"
 								/>
-								<CardBody>
+								<CardBody className="project-body">
 									<CardTitle>Instagram Photofeed</CardTitle>
 									<CardSubtitle>HTML, CSS, & Bootstrap</CardSubtitle>
 
-									<Button color="info" onClick={this.toggleModalToDoApp}>
+									<Button className="project-buton" onClick={this.toggleModalToDoApp}>
 										See More
 									</Button>
 								</CardBody>
@@ -75,9 +75,14 @@ class Projects extends React.Component {
 									isOpen={this.state.modalToDoApp}
 									toggle={this.toggleModalToDoApp}
 									style={{ color: "#4a82db" }}>
-									<ModalHeader toggle={this.toggleModalToDoApp}>React Closet App</ModalHeader>
+									<ModalHeader toggle={this.toggleModalToDoApp}>Instagram Feed Clone</ModalHeader>
 									<ModalBody>
-										<p> React Modal </p>
+										<p>Created with:</p>
+										<ul>
+											<li>HTML</li>
+											<li>CSS</li>
+											<li>Bootstrap</li>
+										</ul>
 									</ModalBody>
 									<ModalFooter>
 										<Link to="#">
@@ -100,11 +105,11 @@ class Projects extends React.Component {
 									src={reactCloset}
 									alt="Card image cap"
 								/>
-								<CardBody>
+								<CardBody className="project-body">
 									<CardTitle>React Closet app</CardTitle>
 									<CardSubtitle>React, WP, Vanilla Js, PHP</CardSubtitle>
 
-									<Button color="info" onClick={this.toggleModalReactCloset}>
+									<Button className="project-buton" onClick={this.toggleModalReactCloset}>
 										See More
 									</Button>
 								</CardBody>
@@ -115,7 +120,19 @@ class Projects extends React.Component {
 									style={{ color: "#4a82db" }}>
 									<ModalHeader toggle={this.toggleModalReactCloset}>React Closet App</ModalHeader>
 									<ModalBody>
-										<p> React Closet App </p>
+										<p>Created with:</p>
+										<ul>
+											<li>ReactJs</li>
+											<li>Vanilla Js</li>
+											<li>WordPress Rest Api</li>
+											<li>WordPress ACF Plugin</li>
+											<li>WordPress Users Plugin</li>
+											<li>Webpack</li>
+											<li>Bootstrap</li>
+											<li>CSS</li>
+											<li>Reactstrap</li>
+											<li>PHP</li>
+										</ul>
 									</ModalBody>
 									<ModalFooter>
 										<Link to="#">
@@ -138,11 +155,11 @@ class Projects extends React.Component {
 									src={meetupClone}
 									alt="Card image cap"
 								/>
-								<CardBody>
+								<CardBody className="project-body">
 									<CardTitle>meetup.com Clone</CardTitle>
 									<CardSubtitle>React, Vanilla Js, WP, PHP</CardSubtitle>
 
-									<Button color="info" onClick={this.toggleModalMeetupClone}>
+									<Button className="project-buton" onClick={this.toggleModalMeetupClone}>
 										See More
 									</Button>
 								</CardBody>
@@ -150,10 +167,21 @@ class Projects extends React.Component {
 								<Modal
 									isOpen={this.state.modalMeetupClone}
 									toggle={this.toggleModalMeetupClone}
-									style={{ color: "#4a82db" }}>
+									style={{
+										color: "#4a82db"
+									}}>
 									<ModalHeader toggle={this.toggleModalMeetupClone}>meetup.com Clone</ModalHeader>
 									<ModalBody>
-										<p> meetup.com Clone </p>
+										<p>Created with:</p>
+										<ul>
+											<li>ReactJs</li>
+											<li>Vanilla Js</li>
+											<li>WordPress Rest Api</li>
+											<li>Webpack</li>
+											<li>Bootstrap</li>
+											<li>Reactstrap</li>
+											<li>PHP</li>
+										</ul>
 									</ModalBody>
 									<ModalFooter>
 										<Link to="#">
@@ -166,8 +194,8 @@ class Projects extends React.Component {
 					</div>
 				</div>
 				<div className="row mt-5">
-					<div className="col d-inline-flex text-primary px-5 pt-2">
-						<Link to="/all/">
+					<div className="col d-inline-flex text-secondary px-5 pt-2">
+						<Link to="/all/" className="text-dark">
 							<span>
 								<i className="fas fa-code" />
 								&nbsp;
