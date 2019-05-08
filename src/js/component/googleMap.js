@@ -32,7 +32,7 @@ class Map extends Component {
 	}
 
 	render() {
-		return <div style={{ width: 300, height: 300 }} id={this.props.id} />;
+		return <div style={{ width: 400, height: 300 }} id={this.props.id} />;
 	}
 }
 

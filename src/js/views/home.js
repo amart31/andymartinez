@@ -35,7 +35,17 @@ export class Home extends React.Component {
 				</div>
 
 				<div className="jumbotron text-center" style={{ marginBottom: "0" }}>
-					<p>Footer</p>
+					<div className="d-inline-flex social-icon">
+						<i className="fab fa-linkedin fa-3x text-info" />
+					</div>
+					&nbsp;&nbsp;
+					<div className="d-inline-flex social-icon">
+						<i className="fab fa-github-square fa-3x text-info" />
+					</div>
+					&nbsp;&nbsp;
+					<div className="d-inline-flex social-icon">
+						<i className="fab fa-twitter-square fa-3x text-info" />
+					</div>
 				</div>
 			</React.Fragment>
 		);

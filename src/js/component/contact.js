@@ -50,7 +50,7 @@ export default class Contact extends React.Component {
 										<FormGroup>
 											<Input
 												style={{
-													width: "300px",
+													width: "400px",
 													margin: "0 auto"
 												}}
 												type="text"
@@ -67,7 +67,7 @@ export default class Contact extends React.Component {
 										<FormGroup>
 											<Input
 												style={{
-													width: "300px",
+													width: "400px",
 													margin: "0 auto"
 												}}
 												type="email"
@@ -84,7 +84,7 @@ export default class Contact extends React.Component {
 										<FormGroup>
 											<Input
 												style={{
-													width: "300px",
+													width: "400px",
 													height: "140px",
 													margin: "0 auto"
 												}}
@@ -118,25 +118,23 @@ export default class Contact extends React.Component {
 									</Form>
 								</div>
 								<div className="col-12 col-sm-12 col-md-12 col-lg-6 ">
-									<div className="map-container">
-										<Map
-											id="myMap"
-											options={{
-												center: { lat: 25.7617, lng: -80.1918 },
-												zoom: 12
-											}}
-											onMapLoad={map => {
-												const marker = new window.google.maps.Marker({
-													position: { lat: 25.7617, lng: -80.1918 },
-													map: map,
-													title: "Hello Istanbul!"
-												});
-												marker.addListener("click", e => {
-													this.createInfoWindow(e, map);
-												});
-											}}
-										/>
-									</div>
+									<Map
+										id="myMap"
+										options={{
+											center: { lat: 25.77386, lng: -80.19498 },
+											zoom: 13
+										}}
+										onMapLoad={map => {
+											const marker = new window.google.maps.Marker({
+												position: { lat: 25.77386, lng: -80.19498 },
+												map: map,
+												title: "Hello Istanbul!"
+											});
+											marker.addListener("click", e => {
+												this.createInfoWindow(e, map);
+											});
+										}}
+									/>
 								</div>
 							</div>
 						</div>
