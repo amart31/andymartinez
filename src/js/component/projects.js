@@ -85,9 +85,9 @@ class Projects extends React.Component {
 										</ul>
 									</ModalBody>
 									<ModalFooter>
-										<Link to="#">
+										<a href="https://amart31.github.io/Instagram-photo-grid-clone/">
 											<Button color="info">Live Demo</Button>
-										</Link>
+										</a>
 									</ModalFooter>
 								</Modal>
 							</Card>

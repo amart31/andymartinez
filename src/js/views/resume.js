@@ -63,7 +63,7 @@ const Resume = () => {
 					</div>
 
 					<div className="col-lg-8">
-						<h4>Work History</h4>
+						<h4>Projects History</h4>
 					</div>
 				</div>
 				<div className="row">

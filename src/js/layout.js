@@ -20,7 +20,7 @@ export class Layout extends React.Component {
 
 		return (
 			<div className="d-flex flex-column h-100">
-				<BrowserRouter basename={process.env.PUBLIC_URL}>
+				<BrowserRouter basename={basename}>
 					<ScrollToTop>
 						<Navbar />
 						<Switch>

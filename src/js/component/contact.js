@@ -45,14 +45,14 @@ export default class Contact extends React.Component {
 					return (
 						<div id="contact-container" className="content-containers container text-center">
 							<div className="row" style={{ marginTop: 3 + "rem" }}>
-								<div className="col-12 col-lg-6 hidden">
+								<div className="col-sm-12 col-md-6 col-lg-6 hidden">
 									<Form onSubmit={actions.handleFormSubmit}>
 										<FormGroup>
 											<Input
-												style={{
-													width: "400px",
-													margin: "0 auto"
-												}}
+												// style={{
+												// 	width: "400px",
+												// 	margin: "0 auto"
+												// }}
 												type="text"
 												name="name"
 												ref={this.name}
@@ -66,10 +66,10 @@ export default class Contact extends React.Component {
 										</FormGroup>
 										<FormGroup>
 											<Input
-												style={{
-													width: "400px",
-													margin: "0 auto"
-												}}
+												// style={{
+												// 	width: "400px",
+												// 	margin: "0 auto"
+												// }}
 												type="email"
 												name="email"
 												ref={this.email}
@@ -83,11 +83,11 @@ export default class Contact extends React.Component {
 										</FormGroup>
 										<FormGroup>
 											<Input
-												style={{
-													width: "400px",
-													height: "140px",
-													margin: "0 auto"
-												}}
+												// style={{
+												// 	width: "400px",
+												// 	height: "140px",
+												// 	margin: "0 auto"
+												// }}
 												type="textarea"
 												name="message"
 												ref={this.message}
@@ -128,7 +128,7 @@ export default class Contact extends React.Component {
 											const marker = new window.google.maps.Marker({
 												position: { lat: 25.77386, lng: -80.19498 },
 												map: map,
-												title: "Hello Istanbul!"
+												title: "Hello Miami!"
 											});
 											marker.addListener("click", e => {
 												this.createInfoWindow(e, map);
