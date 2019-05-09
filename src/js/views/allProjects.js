@@ -18,7 +18,6 @@ import { Link } from "react-router-dom";
 import instagramBstrap from "../../img/instagram-bstrap.png";
 import reactCloset from "../../img/react-closet.png";
 import meetupClone from "../../img/meetup-clone.png";
-
 import excuseGenerator from "../../img/excuse-generator.png";
 
 export class ProjectsList extends React.Component {
@@ -125,7 +124,7 @@ export class ProjectsList extends React.Component {
 									style={{ color: "#4a82db" }}>
 									<ModalHeader toggle={this.toggleModalToDoApp}>Instagram Feed Clone</ModalHeader>
 									<ModalBody>
-										<p> React Modal </p>
+										<p> Instagram Feed Clone </p>
 									</ModalBody>
 									<ModalFooter>
 										<a href="https://amart31.github.io/Instagram-photo-grid-clone/">
@@ -200,7 +199,9 @@ export class ProjectsList extends React.Component {
 									isOpen={this.state.modalReactCloset}
 									toggle={this.toggleModalReactCloset}
 									style={{ color: "#4a82db" }}>
-									<ModalHeader toggle={this.toggleModalReactCloset}>React Closet App</ModalHeader>
+									<ModalHeader toggle={this.toggleModalReactCloset}>
+										Excuse Generator Vanilla Js
+									</ModalHeader>
 									<ModalBody>
 										<p> Excuse Generator site </p>
 									</ModalBody>
@@ -243,9 +244,9 @@ export class ProjectsList extends React.Component {
 										<p> React Modal </p>
 									</ModalBody>
 									<ModalFooter>
-										<Link to="#">
+										<a href="https://amart31.github.io/Instagram-photo-grid-clone/">
 											<Button color="info">Live Demo</Button>
-										</Link>
+										</a>
 									</ModalFooter>
 								</Modal>
 							</Card>
