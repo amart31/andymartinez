@@ -10,7 +10,10 @@
 
 */
 @import "~bootstrap/scss/bootstrap.scss";
+/* 
+globals
 
+*/
 body,
 html {
     width: 100%;
@@ -22,24 +25,38 @@ html {
     font-weight: 400;
 }
 
+/* 
+Navbar
+*/
 .navbar-brand {
      background: -webkit-linear-gradient(#076585, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+
+/* 
+font-awesome icons
+*/
 .fab {
      background: -webkit-linear-gradient(#de6161, #2657eb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* 
+hero-home page
+
+*/
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/b-w-bridge.jpg) no-repeat center center;
+    background: linear-gradient(#1f6ab1, transparent 70%),
+    linear-gradient(0deg, #fff, transparent 40%),
+    #bbe7f8 url("../img/b-w-bridge.jpg") no-repeat center;
+    
     background-size: cover;
 }
 

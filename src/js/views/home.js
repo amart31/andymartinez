@@ -22,7 +22,6 @@ export class Home extends React.Component {
 				<div className="row projects-sec">
 					<div className="col text-center">
 						<h2 className="text-secondary">Projects</h2>
-
 						<Projects />
 					</div>
 				</div>

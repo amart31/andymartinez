@@ -60,7 +60,7 @@ export class ProjectsList extends React.Component {
 					</div>
 				</div>
 				<div className="row m-3">
-					<div className="col-sm-12 col-md-6 col-lg-4">
+					<div className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
 						<div>
 							<Card className="projectCard">
 								<CardImg
@@ -87,6 +87,10 @@ export class ProjectsList extends React.Component {
 									<ModalHeader toggle={this.toggleModalReactCloset}>React Closet App</ModalHeader>
 									<ModalBody>
 										<p> React Closet App </p>
+										<p> React </p>
+										<p> Vanilla Js </p>
+										<p> WordPress </p>
+										<p> PHP </p>
 									</ModalBody>
 									<ModalFooter>
 										<Link to="#">
@@ -98,7 +102,7 @@ export class ProjectsList extends React.Component {
 						</div>
 					</div>
 
-					<div className="col-sm-12 col-md-6 col-lg-4">
+					<div className=" col-xs-12 col-sm-12 col-md-6 col-lg-4">
 						<div>
 							<Card className="projectCard">
 								<CardImg
@@ -125,6 +129,10 @@ export class ProjectsList extends React.Component {
 									<ModalHeader toggle={this.toggleModalToDoApp}>Instagram Feed Clone</ModalHeader>
 									<ModalBody>
 										<p> Instagram Feed Clone </p>
+										<p> React </p>
+										<p> Vanilla Js </p>
+										<p> Bootstrap </p>
+										<p> HTML & CSS </p>
 									</ModalBody>
 									<ModalFooter>
 										<a href="https://amart31.github.io/Instagram-photo-grid-clone/">
@@ -136,7 +144,7 @@ export class ProjectsList extends React.Component {
 						</div>
 					</div>
 
-					<div className="col-sm-12 col-md-6 col-lg-4">
+					<div className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
 						<div>
 							<Card className="projectCard">
 								<CardImg
@@ -163,6 +171,11 @@ export class ProjectsList extends React.Component {
 									<ModalHeader toggle={this.toggleModalMeetupClone}>meetup.com Clone</ModalHeader>
 									<ModalBody>
 										<p> meetup.com Clone </p>
+										<p> React </p>
+										<p> Vanilla Js </p>
+										<p> Bootstrap </p>
+										<p> WordPress </p>
+										<p> PHP </p>
 									</ModalBody>
 									<ModalFooter>
 										<Link to="#">
@@ -175,7 +188,7 @@ export class ProjectsList extends React.Component {
 					</div>
 				</div>
 				<div className="row m-2">
-					<div className="col-sm-12 col-md-6 col-lg-4">
+					<div className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
 						<div>
 							<Card className="projectCard">
 								<CardImg
@@ -204,6 +217,10 @@ export class ProjectsList extends React.Component {
 									</ModalHeader>
 									<ModalBody>
 										<p> Excuse Generator site </p>
+										<p> React </p>
+										<p> Vanilla Js </p>
+										<p> Bootstrap </p>
+										<p> HTML & CSS </p>
 									</ModalBody>
 									<ModalFooter>
 										<a href="https://amart31.github.io/excuse-generator/">
@@ -215,7 +232,7 @@ export class ProjectsList extends React.Component {
 						</div>
 					</div>
 
-					<div className="col-sm-12 col-md-6 col-lg-4">
+					<div className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
 						<div>
 							<Card className="projectCard">
 								<CardImg
@@ -242,6 +259,12 @@ export class ProjectsList extends React.Component {
 									<ModalHeader toggle={this.toggleModalToDoApp}>React Closet App</ModalHeader>
 									<ModalBody>
 										<p> React Modal </p>
+										<p> React </p>
+										<p> Vanilla Js </p>
+										<p> Bootstrap </p>
+										<p> HTML & CSS </p>
+										<p> WordPress </p>
+										<p> PHP </p>
 									</ModalBody>
 									<ModalFooter>
 										<a href="https://amart31.github.io/Instagram-photo-grid-clone/">
@@ -253,7 +276,7 @@ export class ProjectsList extends React.Component {
 						</div>
 					</div>
 
-					<div className="col-sm-12 col-md-6 col-lg-4">
+					<div className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
 						<div>
 							<Card className="projectCard">
 								<CardImg
@@ -280,6 +303,12 @@ export class ProjectsList extends React.Component {
 									<ModalHeader toggle={this.toggleModalMeetupClone}>meetup.com Clone</ModalHeader>
 									<ModalBody>
 										<p> meetup.com Clone </p>
+										<p> React </p>
+										<p> Vanilla Js </p>
+										<p> Bootstrap </p>
+										<p> HTML & CSS </p>
+										<p> WordPress </p>
+										<p> PHP </p>
 									</ModalBody>
 									<ModalFooter>
 										<Link to="#">
