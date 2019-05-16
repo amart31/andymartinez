@@ -34,17 +34,19 @@ export class Home extends React.Component {
 						</div>
 					</div>
 
-					<div className="jumbotron text-center jumbo-footer">
-						<div className="d-inline-flex social-icon">
-							<i className="fab fa-linkedin fa-3x text-info" />
-						</div>
-						&nbsp;&nbsp;
-						<div className="d-inline-flex social-icon">
-							<i className="fab fa-github-square fa-3x text-info" />
-						</div>
-						&nbsp;&nbsp;
-						<div className="d-inline-flex social-icon">
-							<i className="fab fa-twitter-square fa-3x text-info" />
+					<div className="row p-5 footer-sec">
+						<div className="col text-center">
+							<div className="d-inline-flex social-icon">
+								<i className="fab fa-linkedin fa-3x text-info" />
+							</div>
+							{"  "}
+							<div className="d-inline-flex social-icon">
+								<i className="fab fa-github-square fa-3x text-info" />
+							</div>
+							{"  "}
+							<div className="d-inline-flex social-icon">
+								<i className="fab fa-twitter-square fa-3x text-info" />
+							</div>
 						</div>
 					</div>
 				</div>

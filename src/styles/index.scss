@@ -129,6 +129,9 @@ hero-home page
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
+    .card-img {
+    object-fit: scale;
+}  
 }
 
 .projectCard:hover {
@@ -155,8 +158,8 @@ hero-home page
             transition: all 0.3s ease;
             box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
 }
-.jumbo-footer{
-    margin: 0;
+.footer-sec{
+    
     background: linear-gradient(to right, #8e9eab, #eef2f3);
 }
 
@@ -201,6 +204,13 @@ ul {
         float: left;
         margin-top: 15px;
     }
+    .card-img {
+    object-fit: scale;
+} 
+.projectCard{
+    max-width: 300px;
+    max-height: 275px;
+}
 }
 
 
