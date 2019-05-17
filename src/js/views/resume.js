@@ -5,6 +5,7 @@ import avatar from "../../img/avatar.jpeg";
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from "reactstrap";
 
 import logo from "../../img/logo4geeks.png";
+import fiuLogo from "../../img/fiuLogo.png";
 
 const Resume = () => {
 	return (
@@ -52,19 +53,12 @@ const Resume = () => {
 				</div>
 
 				<div className="row mt-1">
-					<div className="col mx-auto">
-						<div className="container">
+					<div className="col col-xs-10 col-sm-8 col-md-4 col-lg-4 mx-auto">
+						<div className="container-fluid">
 							<h4 className="text-center text-secondary">Work History</h4>
 
 							<Card className="projectCard">
-								<CardImg
-									top
-									width="200px"
-									height="200px"
-									className="card-img"
-									src={logo}
-									alt="Card image cap"
-								/>
+								<CardImg top className="card-img" src={logo} alt="Card image cap" />
 								<CardBody>
 									<CardTitle>Teaching Assistant</CardTitle>
 									<CardSubtitle>Miami, Fl</CardSubtitle>
@@ -81,15 +75,42 @@ const Resume = () => {
 						</div>
 					</div>
 				</div>
-				<div className="row mt-1">
-					<div className="col">
-						<h4 className="text-center text-secondary">Projects History</h4>
-					</div>
-				</div>
 
 				<div className="row mt-1">
-					<div className="col">
-						<h4 className="text-center text-secondary">Education</h4>
+					<div className="col mx-auto">
+						<h4 className="text-center text-secondary">Educationy</h4>
+						<div className="container text-justify">
+							<div className="row mt-1">
+								<div className="col col-xs-10 col-sm-8 col-md-4 col-lg-4 mx-auto">
+									<Card className="projectCard m-2">
+										<CardImg top className="card-img" src={logo} alt="Card image cap" />
+										<CardBody>
+											<CardTitle>Full Stack Web Developer</CardTitle>
+											<CardSubtitle>4Geeks Academy</CardSubtitle>
+											<CardText>
+												Project-based Full-Stack Software Development program teaching HTML5,
+												CSS3, SASS, React.js, Webpack, PHP, WordPress, RESTful API, MySQL, HTTP
+												Architecture, AJAX, MVC, ORM, Git, and much more.
+											</CardText>
+											<Button color="info">See More</Button>
+										</CardBody>
+									</Card>
+								</div>
+
+								<div className="col col-xs-10 col-sm-8 col-md-4 col-lg-4 mx-auto">
+									<Card className="projectCard">
+										<CardImg top className="card-img" src={fiuLogo} alt="Card image cap" />
+										<CardBody>
+											<CardTitle>Bs Criminal Justice</CardTitle>
+											<CardTitle className="text-secondary">2012-2016</CardTitle>
+											<CardSubtitle>Florida International University</CardSubtitle>
+											<CardText>3.2 GPA. Deans List 2015, 2016. </CardText>
+											<Button color="info">See More</Button>
+										</CardBody>
+									</Card>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

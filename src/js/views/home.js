@@ -34,7 +34,7 @@ export class Home extends React.Component {
 						</div>
 					</div>
 
-					<div className="row p-5 footer-sec">
+					<div className="row p-3 footer-sec">
 						<div className="col text-center">
 							<div className="d-inline-flex social-icon">
 								<i className="fab fa-linkedin fa-3x text-info" />

@@ -66,8 +66,6 @@ export class ProjectsList extends React.Component {
 								<Card className="projectCard">
 									<CardImg
 										top
-										width="200"
-										height="200"
 										className="card-img"
 										src="https://amart31.github.io/andymartinez/react-closet.png"
 										alt="Card image cap"
@@ -110,8 +108,6 @@ export class ProjectsList extends React.Component {
 								<Card className="projectCard">
 									<CardImg
 										top
-										width="200"
-										height="200"
 										className="card-img"
 										src="https://amart31.github.io/andymartinez/instagram-bstrap.png"
 										alt="Card image cap"
@@ -152,8 +148,6 @@ export class ProjectsList extends React.Component {
 								<Card className="projectCard">
 									<CardImg
 										top
-										width="200"
-										height="200"
 										className="card-img"
 										src="https://amart31.github.io/andymartinez/meetup-clone.png"
 										alt="Card image cap"
@@ -196,8 +190,6 @@ export class ProjectsList extends React.Component {
 								<Card className="projectCard">
 									<CardImg
 										top
-										width="200"
-										height="200"
 										className="card-img"
 										src="https://amart31.github.io/andymartinez/excuse-generator.png"
 										alt="Card image cap"
@@ -240,8 +232,6 @@ export class ProjectsList extends React.Component {
 								<Card className="projectCard">
 									<CardImg
 										top
-										width="200"
-										height="200"
 										className="card-img"
 										src="https://amart31.github.io/andymartinez/instagram-bstrap.png"
 										alt="Card image cap"
@@ -284,8 +274,6 @@ export class ProjectsList extends React.Component {
 								<Card className="projectCard">
 									<CardImg
 										top
-										width="200"
-										height="200"
 										className="card-img"
 										src="https://amart31.github.io/andymartinez/meetup-clone.png"
 										alt="Card image cap"
