@@ -39,7 +39,7 @@ const Resume = () => {
 					</div>
 				</div>
 			</div>
-			<div className="container">
+			<div className="container-fluid">
 				<div className="row mt-1">
 					<div className="col">
 						<h4 className="text-center text-secondary">Technologies Used</h4>
@@ -53,29 +53,32 @@ const Resume = () => {
 
 				<div className="row mt-1">
 					<div className="col mx-auto">
-						<h4 className="text-center text-secondary">Work History</h4>
+						<div className="container">
+							<h4 className="text-center text-secondary">Work History</h4>
 
-						<Card className="projectCard">
-							<CardImg
-								top
-								width="200px"
-								height="200px"
-								className="card-img"
-								src={logo}
-								alt="Card image cap"
-							/>
-							<CardBody>
-								<CardTitle>Teaching Assistant</CardTitle>
-								<CardSubtitle>Miami, Fl</CardSubtitle>
-								<CardText>
-									Teaching assistant/mentor for a group of 11 students. Actively evaluate students
-									coding assignments and homework in order to provide them with insightful feedback
-									according to the best coding practice standards. Thoroughly explained complex
-									concepts and materials in a manner that students could easily understand.{" "}
-								</CardText>
-								<Button color="info">See More</Button>
-							</CardBody>
-						</Card>
+							<Card className="projectCard">
+								<CardImg
+									top
+									width="200px"
+									height="200px"
+									className="card-img"
+									src={logo}
+									alt="Card image cap"
+								/>
+								<CardBody>
+									<CardTitle>Teaching Assistant</CardTitle>
+									<CardSubtitle>Miami, Fl</CardSubtitle>
+									<CardText>
+										Teaching assistant/mentor for a group of 11 students. Actively evaluate students
+										coding assignments and homework in order to provide them with insightful
+										feedback according to the best coding practice standards. Thoroughly explained
+										complex concepts and materials in a manner that students could easily
+										understand.{" "}
+									</CardText>
+									<Button color="info">See More</Button>
+								</CardBody>
+							</Card>
+						</div>
 					</div>
 				</div>
 				<div className="row mt-1">
