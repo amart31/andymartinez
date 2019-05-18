@@ -45,79 +45,85 @@ export default class Contact extends React.Component {
 					return (
 						<div className="container-fluid text-center">
 							<div className="row" style={{ marginTop: 3 + "rem" }}>
-								<div className="col col-xs-12 col-sm-12 col-md-6 col-lg-6 hidden">
-									<Form onSubmit={actions.handleFormSubmit}>
-										<FormGroup>
-											<Input
-												// style={{
-												// 	width: "400px",
-												// 	margin: "0 auto"
-												// }}
-												type="text"
-												name="name"
-												ref={this.name}
-												placeholder="Name"
-												onChange={e =>
-													this.setState({
-														name: e.target.value
-													})
-												}
-											/>
-										</FormGroup>
-										<FormGroup>
-											<Input
-												// style={{
-												// 	width: "400px",
-												// 	margin: "0 auto"
-												// }}
-												type="email"
-												name="email"
-												ref={this.email}
-												placeholder="Email"
-												onChange={e =>
-													this.setState({
-														email: e.target.value
-													})
-												}
-											/>
-										</FormGroup>
-										<FormGroup>
-											<Input
-												// style={{
-												// 	width: "400px",
-												// 	height: "140px",
-												// 	margin: "0 auto"
-												// }}
-												type="textarea"
-												name="message"
-												ref={this.message}
-												placeholder="Tell me something"
-												onChange={e =>
-													this.setState({
-														message: e.target.value
-													})
-												}
-											/>
-										</FormGroup>
-										<div className="text-center pb-2">
-											<Button
-												color="primary"
-												disabled={!this.validateForm()}
-												// 	onClick={() => {
-												// 		this.setState({
-												// 			session: actions.login(
-												// 				this.state.user,
-												// 				this.state.pass
-												// 			)
-												// 		});
-												// 	}}
-											>
-												Submit
-											</Button>
-										</div>
-									</Form>
+								<div className="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+									<div
+										className="form-container text-center mx-auto"
+										style={{
+											width: "80%"
+										}}>
+										<Form onSubmit={actions.handleFormSubmit}>
+											<FormGroup>
+												<Input
+													// style={{
+													// 	width: "400px",
+													// 	margin: "0 auto"
+													// }}
+													type="text"
+													name="name"
+													ref={this.name}
+													placeholder="Name"
+													onChange={e =>
+														this.setState({
+															name: e.target.value
+														})
+													}
+												/>
+											</FormGroup>
+											<FormGroup>
+												<Input
+													// style={{
+													// 	width: "400px",
+													// 	margin: "0 auto"
+													// }}
+													type="email"
+													name="email"
+													ref={this.email}
+													placeholder="Email"
+													onChange={e =>
+														this.setState({
+															email: e.target.value
+														})
+													}
+												/>
+											</FormGroup>
+											<FormGroup>
+												<Input
+													// style={{
+													// 	width: "400px",
+													// 	height: "140px",
+													// 	margin: "0 auto"
+													// }}
+													type="textarea"
+													name="message"
+													ref={this.message}
+													placeholder="Tell me something"
+													onChange={e =>
+														this.setState({
+															message: e.target.value
+														})
+													}
+												/>
+											</FormGroup>
+											<div className="text-center pb-2">
+												<Button
+													color="primary"
+													disabled={!this.validateForm()}
+													// 	onClick={() => {
+													// 		this.setState({
+													// 			session: actions.login(
+													// 				this.state.user,
+													// 				this.state.pass
+													// 			)
+													// 		});
+													// 	}}
+												>
+													Submit
+												</Button>
+											</div>
+										</Form>
+									</div>
 								</div>
-								<div className="col col-xs-12 col-sm-12 col-md-6 col-lg-6 d-sm-block">
+								<div className="col col-xs-12 col-sm-12 col-md-6 col-lg-6 mx-auto">
 									<Map
 										id="myMap"
 										options={{
