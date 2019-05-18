@@ -43,9 +43,9 @@ export default class Contact extends React.Component {
 			<Context.Consumer>
 				{({ store, actions }) => {
 					return (
-						<div id="contact-container" className="content-containers container text-center">
+						<div className="container-fluid text-center">
 							<div className="row" style={{ marginTop: 3 + "rem" }}>
-								<div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 hidden">
+								<div className="col col-xs-12 col-sm-12 col-md-6 col-lg-6 hidden">
 									<Form onSubmit={actions.handleFormSubmit}>
 										<FormGroup>
 											<Input
@@ -117,7 +117,7 @@ export default class Contact extends React.Component {
 										</div>
 									</Form>
 								</div>
-								<div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-none d-sm-block">
+								<div className="col col-xs-12 col-sm-12 col-md-6 col-lg-6 d-sm-block">
 									<Map
 										id="myMap"
 										options={{

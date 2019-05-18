@@ -78,7 +78,7 @@ const Resume = () => {
 
 				<div className="row mt-1">
 					<div className="col mx-auto">
-						<h4 className="text-center text-secondary">Educationy</h4>
+						<h4 className="text-center text-secondary">Education</h4>
 						<div className="container text-justify">
 							<div className="row mt-1">
 								<div className="col col-xs-10 col-sm-8 col-md-4 col-lg-4 mx-auto">
