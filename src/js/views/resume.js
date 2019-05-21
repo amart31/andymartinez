@@ -11,39 +11,40 @@ const Resume = () => {
 	return (
 		<React.Fragment>
 			<div className="resume-header">
-				<div className="container">
-					<div className="row">
-						<div className="col">
-							<div className="intro-message">
-								<img
-									className="img-fluid avatar"
-									src={avatar}
-									style={{
-										borderRadius: 50 + "%",
-										height: 135 + "px",
-										width: 135 + "px"
-									}}
-								/>
-								<h1>{"<Resume />"}</h1>
-								<h3>Andy Martinez</h3>
-								<hr className="intro-divider" />
-								<Button outline href="https://twitter.com/amart1751" color="info" className="mr-2">
-									<i className="fab fa-twitter mr-1" />
-									Twitter
-								</Button>{" "}
-								<Button outline href="https://github.com/amart31" color="info" className="mr-2">
-									<i className="fab fa-github mr-1" />
-									Github
-								</Button>
-							</div>
-						</div>
-					</div>
+				<div className="avatar-box">
+					<img
+						className="avatar"
+						src={avatar}
+						style={{
+							borderRadius: 50 + "%",
+							height: 135 + "px",
+							width: 135 + "px"
+						}}
+					/>
+				</div>
+				<div className="resume-box">
+					<h1 className="resume-title">
+						<span className="heading-resume-main">{"<Resume />"}</span>
+						<span className="heading-resume-sub">Andy Martinez</span>
+					</h1>
+					<a href="#resume" className="btn btn-resume">
+						see my work
+					</a>
+					<Button className="btn-social mr-2" outline href="https://twitter.com/amart1751" color="info">
+						Twitter
+					</Button>{" "}
+					<Button className="btn-git mr-2" outline href="https://github.com/amart31" color="info">
+						Github
+					</Button>
 				</div>
 			</div>
+
 			<div className="container-fluid">
 				<div className="row mt-1">
 					<div className="col">
-						<h4 className="text-center text-secondary">Technologies Used</h4>
+						<h4 id="resume" className="text-center text-secondary">
+							Technologies Used
+						</h4>
 						<p className="text-center">
 							{
 								"React | Vanilla Js | Webpack | BabelJs | JWT | Bootstrap | HTML | Wordpress | AWS | CSS | Git | Restful APi's | PHP | NPM | Github | NodeJs"

@@ -54,7 +54,7 @@ class Projects extends React.Component {
 					<div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
 						<Card className="projectCard">
 							<CardImg top className="card-img" src={instagramBstrap} alt="Card image cap" />
-							<CardBody className="project-body">
+							<CardBody>
 								<CardTitle>Instagram Photofeed</CardTitle>
 								<CardSubtitle>HTML, CSS, & Bootstrap</CardSubtitle>
 
@@ -88,7 +88,7 @@ class Projects extends React.Component {
 					<div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
 						<Card className="projectCard">
 							<CardImg top className="card-img" src={reactCloset} alt="Card image cap" />
-							<CardBody className="project-body">
+							<CardBody>
 								<CardTitle>React Closet app</CardTitle>
 								<CardSubtitle>React, WP, Vanilla Js, PHP</CardSubtitle>
 
@@ -129,7 +129,7 @@ class Projects extends React.Component {
 					<div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
 						<Card className="projectCard">
 							<CardImg top className="card-img" src={meetupClone} alt="Card image cap" />
-							<CardBody className="project-body">
+							<CardBody>
 								<CardTitle>meetup.com Clone</CardTitle>
 								<CardSubtitle>React, Vanilla Js, WP, PHP</CardSubtitle>
 

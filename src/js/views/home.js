@@ -1,10 +1,11 @@
 import React from "react";
-import HeroView from "../component/heroView";
+import Header from "../component/header";
 import "../../styles/home.scss";
 
 import About from "../component/about";
 import Contact from "../component/contact";
 import Projects from "../component/projects";
+import Services from "../component/services";
 
 export class Home extends React.Component {
 	// componentDidmount(){
@@ -13,7 +14,8 @@ export class Home extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<HeroView />
+				<Header />
+				<Services />
 				<div className="container-fluid">
 					<div className="row about-sec">
 						<div className="col text-center">
@@ -22,7 +24,9 @@ export class Home extends React.Component {
 					</div>
 					<div className="row projects-sec">
 						<div className="col text-center">
-							<h2 className="text-secondary">Projects</h2>
+							<h2 className="text-secondary" id="projects">
+								Projects
+							</h2>
 							<Projects />
 						</div>
 					</div>

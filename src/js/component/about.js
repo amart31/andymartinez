@@ -1,7 +1,6 @@
 import React from "react";
 import avatar from "../../img/avatar.jpeg";
 import { Progress } from "reactstrap";
-import Services from "./services.js";
 
 import PropTypes from "prop-types";
 
@@ -13,7 +12,6 @@ export default class About extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<Services />
 				<div id="about-container" className="content-containers container text-center mt-1">
 					<hr />
 					<div className="row" style={{ marginTop: 3 + "rem" }}>
