@@ -51,7 +51,7 @@ class Projects extends React.Component {
 		return (
 			<div>
 				<div className="row m-3">
-					<div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+					<div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 project-col">
 						<Card className="projectCard">
 							<CardImg top className="card-img" src={instagramBstrap} alt="Card image cap" />
 							<CardBody>
@@ -85,7 +85,7 @@ class Projects extends React.Component {
 						</Card>
 					</div>
 
-					<div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+					<div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 project-col">
 						<Card className="projectCard">
 							<CardImg top className="card-img" src={reactCloset} alt="Card image cap" />
 							<CardBody>
@@ -126,7 +126,7 @@ class Projects extends React.Component {
 						</Card>
 					</div>
 
-					<div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+					<div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 project-col">
 						<Card className="projectCard">
 							<CardImg top className="card-img" src={meetupClone} alt="Card image cap" />
 							<CardBody>
