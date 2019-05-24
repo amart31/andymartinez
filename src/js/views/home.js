@@ -16,28 +16,14 @@ export class Home extends React.Component {
 			<React.Fragment>
 				<Header />
 				<Services />
+
+				<About />
+
+				<Projects />
+
+				<Contact />
+
 				<div className="container-fluid">
-					<div className="row about-sec">
-						<div className="col text-center">
-							<About />
-						</div>
-					</div>
-					<div className="row projects-sec">
-						<div className="col text-center">
-							<h2 className="text-secondary" id="projects">
-								Projects
-							</h2>
-							<Projects />
-						</div>
-					</div>
-					<div className="row contact-sec">
-						<div className="col text-center">
-							<h2 className="text-secondary">Contact</h2>
-
-							<Contact />
-						</div>
-					</div>
-
 					<div className="row p-3 footer-sec">
 						<div className="col text-center">
 							<div className="d-inline-flex social-icon">

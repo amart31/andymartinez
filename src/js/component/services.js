@@ -5,8 +5,8 @@ import { DiHtml5, DiReact, DiJsBadge, DiWordpress } from "react-icons/di";
 import Title from "./title";
 
 export default class Services extends Component {
-	state = {
-		services: [
+	render() {
+		const services = [
 			{
 				icon: <DiReact />,
 				title: "ReactJs",
@@ -27,14 +27,12 @@ export default class Services extends Component {
 				title: "WordPress",
 				info: "Themes and Plugins Development"
 			}
-		]
-	};
-	render() {
+		];
 		return (
 			<section className="services">
 				<Title title="Services" />
 				<div className="services-center">
-					{this.state.services.map((item, index) => {
+					{services.map((item, index) => {
 						return (
 							<article key={index} className="service">
 								<span>{item.icon}</span>
