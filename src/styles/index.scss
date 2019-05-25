@@ -307,34 +307,16 @@ ul {
  
 }
 
-.projects-header{
-    height: 200px;
-    background: url(../img/code.jpg) no-repeat center center;
-    background-size: cover;
-}
+
 
 .resume-header {
-    height: 100%;
     background-image:linear-gradient(to right bottom, rgba(7,101,133, 0.8), rgba(255,255,255, 0.8));
-    padding-top: 190%;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-size: cover;
-    background-position: top;
-    position: relative;
-    top: auto;
+
     color: #f8f8f8;
     
-}
-.avatar-box {
-    position: absolute;
-    top: 40px;
-    left: 40%;
-}
-.resume-box {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .resume-title {
@@ -342,7 +324,7 @@ ul {
     text-transform: uppercase;
 
     backface-visibility: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 1rem;
 }
 .heading-resume-main {
     display: block;

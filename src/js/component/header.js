@@ -12,7 +12,7 @@ const Header = () => {
 							<span className="heading-primary-sub">created by Andy Martinez</span>
 						</h1>
 
-						<a href="#Projects" className="btn btn-white">
+						<a href="#projectsList" className="btn btn-white">
 							see my work
 						</a>
 					</div>

@@ -49,7 +49,7 @@ export default class Contact extends React.Component {
 									<div
 										className="form-container text-center mx-auto"
 										style={{
-											width: "80%"
+											width: "100%"
 										}}>
 										<Form onSubmit={actions.handleFormSubmit}>
 											<FormGroup>
@@ -123,7 +123,7 @@ export default class Contact extends React.Component {
 										</Form>
 									</div>
 								</div>
-								<div className="col col-xs-12 col-sm-12 col-md-6 col-lg-6 mx-auto">
+								<div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 mx-auto">
 									<Map
 										id="myMap"
 										options={{

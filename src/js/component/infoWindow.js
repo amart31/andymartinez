@@ -15,10 +15,7 @@ function InfoWindow(props) {
 				<CardBody>
 					<CardTitle>Istanbul</CardTitle>
 					<CardSubtitle>Card subtitle</CardSubtitle>
-					<CardText>
-						{" "}
-						Istanbul is a major city in Turkey that straddles Europe and Asia across the Bosphorus Strait.
-					</CardText>
+					<CardText> Istanbul is a major city.</CardText>
 					<Button size="small" color="primary">
 						Share
 					</Button>

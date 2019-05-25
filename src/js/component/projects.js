@@ -102,7 +102,7 @@ class Projects extends React.Component {
 			}
 		];
 		return (
-			<section className="projects">
+			<section className="projects" id="projectsList">
 				<Title title="Projects" />
 				<div className="projects-center">
 					{projects.map((item, index) => {
