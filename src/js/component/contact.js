@@ -51,7 +51,7 @@ export default class Contact extends React.Component {
 										style={{
 											width: "100%"
 										}}>
-										<Form onSubmit={actions.handleFormSubmit}>
+										<Form action="https://formspree.io/martinez1751@gmail.com" method="POST">
 											<FormGroup>
 												<Input
 													// style={{
@@ -75,8 +75,8 @@ export default class Contact extends React.Component {
 													// 	width: "400px",
 													// 	margin: "0 auto"
 													// }}
-													type="email"
-													name="email"
+													type="text"
+													name="name"
 													ref={this.email}
 													placeholder="Email"
 													onChange={e =>
@@ -94,7 +94,7 @@ export default class Contact extends React.Component {
 													// 	margin: "0 auto"
 													// }}
 													type="textarea"
-													name="message"
+													name="name"
 													ref={this.message}
 													placeholder="Tell me something"
 													onChange={e =>
@@ -107,7 +107,7 @@ export default class Contact extends React.Component {
 											<div className="text-center pb-2">
 												<Button
 													color="primary"
-													disabled={!this.validateForm()}
+													//disabled={!this.validateForm()}
 													// 	onClick={() => {
 													// 		this.setState({
 													// 			session: actions.login(
