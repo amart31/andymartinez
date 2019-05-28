@@ -75,8 +75,8 @@ const Resume = () => {
 						<h4 className="text-center text-secondary">Education</h4>
 						<div className="container text-justify">
 							<div className="row mt-1">
-								<div className="col col-xs-10 col-sm-8 col-md-4 col-lg-4 mx-auto">
-									<Card className="projectCard m-2">
+								<div className="col col-xs-10 col-sm-8 col-md-4 col-lg-4 mx-auto pt-2 pb-2">
+									<Card className="projectCard">
 										<CardImg
 											top
 											className="card-img"
@@ -95,7 +95,7 @@ const Resume = () => {
 									</Card>
 								</div>
 
-								<div className="col col-xs-10 col-sm-8 col-md-4 col-lg-4 mx-auto">
+								<div className="col col-xs-10 col-sm-8 col-md-4 col-lg-4 mx-autopt-2 pb-2">
 									<Card className="projectCard">
 										<CardImg
 											top

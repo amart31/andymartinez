@@ -9,7 +9,8 @@ import {
 	CardImg,
 	CardBody,
 	CardTitle,
-	CardSubtitle
+	CardSubtitle,
+	CardFooter
 } from "reactstrap";
 
 import Title from "./title";
@@ -112,11 +113,12 @@ class Projects extends React.Component {
 								<CardBody>
 									<CardTitle>{item.title}</CardTitle>
 									<CardSubtitle>{item.info}</CardSubtitle>
-
+								</CardBody>
+								<CardFooter>
 									<Button className="project-buton" onClick={this.toggleModal}>
 										See More
 									</Button>
-								</CardBody>
+								</CardFooter>
 
 								<Modal isOpen={this.state.modal} toggle={this.toggleModal} style={modalStyle}>
 									<ModalHeader toggle={this.toggleModal}>{item.title}</ModalHeader>
