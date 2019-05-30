@@ -1,0 +1,18 @@
+body {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+}
+
+ul {
+  list-style-type: none;
+ 
+}
+
+.fab {
+    margin-top: .5rem;
+     background: -webkit-linear-gradient(#de6161, #2657eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

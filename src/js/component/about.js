@@ -16,15 +16,7 @@ export default class About extends React.Component {
 					<hr />
 					<div className="row" style={{ marginTop: 3 + "rem" }}>
 						<div className="col-12 col-lg-6 hidden">
-							<img
-								className="img-fluid avatar"
-								src={avatar}
-								style={{
-									borderRadius: 50 + "%",
-									height: 200 + "px",
-									width: 200 + "px"
-								}}
-							/>
+							<img className="img-fluid avatar--about" src={avatar} />
 							<p className="about pt-3">
 								I am a Full Stack Jr Developer with experience creating responsive, dynamic, and
 								user-friendly applications with ReactJs, Vanilla Js, and much more. Take a look at my

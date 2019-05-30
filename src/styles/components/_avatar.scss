@@ -1,0 +1,15 @@
+.avatar {
+	border-radius: 50%;
+	height: 14rem;
+	width: 14rem;
+	
+	&--about{
+		border-radius: 50%;
+		height: 20rem;
+		width: 20rem;
+}
+&:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba($color-black,.2);
+        }
+}

@@ -31,7 +31,7 @@ export default class Services extends Component {
 		return (
 			<section className="services">
 				<Title title="Services" />
-				<div className="services-center">
+				<div className="services--center">
 					{services.map((item, index) => {
 						return (
 							<article key={index} className="service">

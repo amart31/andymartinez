@@ -46,82 +46,71 @@ export default class Contact extends React.Component {
 						<div className="container-fluid text-center">
 							<div className="row" style={{ marginTop: 3 + "rem" }}>
 								<div className="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
-									<div
-										className="form-container text-center mx-auto"
-										style={{
-											width: "100%"
-										}}>
-										<Form action="https://formspree.io/martinez1751@gmail.com" method="POST">
-											<FormGroup>
-												<Input
-													// style={{
-													// 	width: "400px",
-													// 	margin: "0 auto"
-													// }}
-													type="text"
-													name="name"
-													ref={this.name}
-													placeholder="Name"
-													onChange={e =>
-														this.setState({
-															name: e.target.value
-														})
-													}
-												/>
-											</FormGroup>
-											<FormGroup>
-												<Input
-													// style={{
-													// 	width: "400px",
-													// 	margin: "0 auto"
-													// }}
-													type="text"
-													name="name"
-													ref={this.email}
-													placeholder="Email"
-													onChange={e =>
-														this.setState({
-															email: e.target.value
-														})
-													}
-												/>
-											</FormGroup>
-											<FormGroup>
-												<Input
-													// style={{
-													// 	width: "400px",
-													// 	height: "140px",
-													// 	margin: "0 auto"
-													// }}
-													type="textarea"
-													name="name"
-													ref={this.message}
-													placeholder="Tell me something"
-													onChange={e =>
-														this.setState({
-															message: e.target.value
-														})
-													}
-												/>
-											</FormGroup>
-											<div className="text-center pb-2">
-												<Button
-													color="primary"
-													//disabled={!this.validateForm()}
-													// 	onClick={() => {
-													// 		this.setState({
-													// 			session: actions.login(
-													// 				this.state.user,
-													// 				this.state.pass
-													// 			)
-													// 		});
-													// 	}}
-												>
-													Submit
-												</Button>
-											</div>
-										</Form>
-									</div>
+									<Form
+										action="https://formspree.io/martinez1751@gmail.com"
+										method="POST"
+										className="form">
+										<FormGroup>
+											<Input
+												type="text"
+												name="name"
+												ref={this.name}
+												placeholder="Name"
+												onChange={e =>
+													this.setState({
+														name: e.target.value
+													})
+												}
+											/>
+										</FormGroup>
+										<FormGroup>
+											<Input
+												type="text"
+												name="name"
+												ref={this.email}
+												placeholder="Email"
+												onChange={e =>
+													this.setState({
+														email: e.target.value
+													})
+												}
+											/>
+										</FormGroup>
+										<FormGroup>
+											<Input
+												// style={{
+												// 	width: "400px",
+												// 	height: "140px",
+												// 	margin: "0 auto"
+												// }}
+												type="textarea"
+												name="name"
+												ref={this.message}
+												placeholder="Tell me something"
+												onChange={e =>
+													this.setState({
+														message: e.target.value
+													})
+												}
+											/>
+										</FormGroup>
+										<div className="text-center pb-2">
+											<Button
+												color="primary"
+												//disabled={!this.validateForm()}
+												// 	onClick={() => {
+												// 		this.setState({
+												// 			session: actions.login(
+												// 				this.state.user,
+												// 				this.state.pass
+												// 			)
+												// 		});
+												// 	}}
+											>
+												Submit
+											</Button>
+										</div>
+									</Form>
 								</div>
 								<div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 mx-auto">
 									<Map

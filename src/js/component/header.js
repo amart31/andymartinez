@@ -1,4 +1,3 @@
-//create your first component
 import React from "react";
 
 const Header = () => {
@@ -6,13 +5,13 @@ const Header = () => {
 		<React.Fragment>
 			<div className="text-center">
 				<header className="header">
-					<div className="text-box">
-						<h1 className="heading-primary">
-							<span className="heading-primary-main">{"<Welcome />"}</span>
-							<span className="heading-primary-sub">created by Andy Martinez</span>
+					<div className="header--textbox">
+						<h1 className="header--primary">
+							<span className="header--primary--main">{"<Welcome />"}</span>
+							<span className="header--primary--sub">created by Andy Martinez</span>
 						</h1>
 
-						<a href="#projectsList" className="btn btn-white">
+						<a href="#projectsList" className="btn btn--white">
 							see my work
 						</a>
 					</div>

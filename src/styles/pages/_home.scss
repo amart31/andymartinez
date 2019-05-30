@@ -1,0 +1,25 @@
+.social-icon:hover {
+    
+            transition: all 0.3s ease;
+            box-shadow: 1.2rem 1.5rem 2rem 0 rgba($color-blue-gray,0.15);
+}
+
+.skills-progress:hover {
+    transition: all 0.3s ease;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        }
+        
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1.5rem;
+    overflow: hidden;
+    font-size: 1rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+
+.about {
+    font-size: 1.6rem;
+}

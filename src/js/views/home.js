@@ -1,16 +1,12 @@
 import React from "react";
-import Header from "../component/header";
-import "../../styles/home.scss";
 
+import Header from "../component/header";
 import About from "../component/about";
 import Contact from "../component/contact";
 import Projects from "../component/projects";
 import Services from "../component/services";
 
 export class Home extends React.Component {
-	// componentDidmount(){
-	// 	if (this.$ref && location.href.includes())
-	// }
 	render() {
 		return (
 			<React.Fragment>

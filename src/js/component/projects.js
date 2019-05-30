@@ -105,17 +105,17 @@ class Projects extends React.Component {
 		return (
 			<section className="projects" id="projectsList">
 				<Title title="Projects" />
-				<div className="projects-center">
+				<div className="projects--center">
 					{projects.map((item, index) => {
 						return (
-							<Card key={index} className="projectCard">
-								<CardImg top className="card-img" src={item.img} alt="Card image cap" />
+							<Card key={index} className="card--project">
+								<CardImg top className="card--project--img" src={item.img} alt="Card image cap" />
 								<CardBody>
 									<CardTitle>{item.title}</CardTitle>
 									<CardSubtitle>{item.info}</CardSubtitle>
 								</CardBody>
 								<CardFooter>
-									<Button className="project-buton" onClick={this.toggleModal}>
+									<Button className="btn--project-card" onClick={this.toggleModal}>
 										See More
 									</Button>
 								</CardFooter>

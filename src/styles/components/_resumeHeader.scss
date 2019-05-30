@@ -1,0 +1,33 @@
+.resume-header {
+    background-image:linear-gradient(to right bottom, rgba($color-aqua-blue, 0.8), rgba($color-white, 0.8));
+    padding-top: 5.5rem;
+    padding-bottom: 5rem;
+    background-size: cover;
+
+    color: $color-white;
+    
+    &--imgbox {
+        display: inline-block;
+    }
+    
+    &--textbox {
+        display: inline-block;
+    }
+    
+    &--main {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    animation: moveInLeft 1s ease-out;
+}
+
+&--sub {
+    display: block;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .5rem;
+    animation: moveInRight 1s ease-out;
+}
+    
+}

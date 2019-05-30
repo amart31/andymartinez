@@ -5,26 +5,27 @@ import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } fr
 const Resume = () => {
 	return (
 		<React.Fragment>
-			<div className="resume-header text-center">
-				<img
-					className="avatar"
-					src="https://github.com/amart31/andymartinez/blob/master/src/img/avatar.jpeg?raw=true"
-					style={{
-						borderRadius: 50 + "%",
-						height: 135 + "px",
-						width: 135 + "px"
-					}}
-				/>
-				<h1 className="heading-primary">
-					<span className="heading-resume-main">{"<Resume />"}</span>
-					<span className="heading-resume-sub">Andy Martinez</span>
-				</h1>
-				<Button className="btn-social mr-2" outline href="https://twitter.com/amart1751" color="info">
-					Twitter
-				</Button>{" "}
-				<Button className="btn-git mr-2" outline href="https://github.com/amart31" color="info">
-					Github
-				</Button>
+			<div className="text-center">
+				<header className="resume-header">
+					<div className="resume-header--imgbox">
+						<img
+							className="avatar"
+							src="https://github.com/amart31/andymartinez/blob/master/src/img/avatar.jpeg?raw=true"
+						/>
+					</div>
+					<div className="resume-header--textbox">
+						<h1 className="header-primary">
+							<span className="resume-header--main">{"<Resume />"}</span>
+							<span className="resume-header--sub">Andy Martinez</span>
+						</h1>
+						<Button className="btn-social mr-2" outline href="https://twitter.com/amart1751" color="info">
+							Twitter
+						</Button>{" "}
+						<Button className="btn-git mr-2" outline href="https://github.com/amart31" color="info">
+							Github
+						</Button>
+					</div>
+				</header>
 			</div>
 
 			<div className="container-fluid">
@@ -46,10 +47,10 @@ const Resume = () => {
 						<div className="container-fluid">
 							<h4 className="text-center text-secondary">Work History</h4>
 
-							<Card className="projectCard">
+							<Card className="card--resume">
 								<CardImg
 									top
-									className="card-img"
+									className="card--resume--img"
 									src="https://github.com/amart31/andymartinez/blob/master/src/img/logo4geeks.png?raw=true"
 									alt="Card image cap"
 								/>
@@ -63,7 +64,6 @@ const Resume = () => {
 										complex concepts and materials in a manner that students could easily
 										understand.{" "}
 									</CardText>
-									<Button color="info">See More</Button>
 								</CardBody>
 							</Card>
 						</div>
