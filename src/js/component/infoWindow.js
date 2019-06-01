@@ -9,13 +9,13 @@ function InfoWindow(props) {
 				<CardImg
 					top
 					width="300px"
-					src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+					src="https://github.com/amart31/final-project-frontend"
 					alt="Card image cap"
 				/>
 				<CardBody>
-					<CardTitle>Istanbul</CardTitle>
+					<CardTitle>Miami</CardTitle>
 					<CardSubtitle>Card subtitle</CardSubtitle>
-					<CardText> Istanbul is a major city.</CardText>
+					<CardText> Miami is a major city.</CardText>
 					<Button size="small" color="primary">
 						Share
 					</Button>

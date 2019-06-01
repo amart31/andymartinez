@@ -10,7 +10,7 @@ export class Navbar extends React.Component {
 				</Link>
 				<div className="ml-auto">
 					<Link to="/resume">
-						<button type="button" className="btn btn-outline-secondary">
+						<button type="button" className="btn btn--nav btn-outline-secondary">
 							Resume
 						</button>
 					</Link>

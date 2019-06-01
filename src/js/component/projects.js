@@ -15,12 +15,12 @@ import {
 
 import Title from "./title";
 
-import ReactCloset from "../../img/react-closet.png";
-import ReactResort from "../../img/react-resort.png";
-import MeetupClone from "../../img/meetup-clone.png";
-import ExcuseGenerator from "../../img/excuse-generator.png";
+import ReactCloset from "../../img/react-closet.jpg";
+import ReactResort from "../../img/react-resort.jpg";
+import MeetupClone from "../../img/meetup-clone.jpg";
+import ExcuseGenerator from "../../img/excuse-generator.jpg";
 import CodeImage from "../../img/code.jpg";
-import InstagramBstrap from "../../img/instagram-bstrap.png";
+import InstagramBstrap from "../../img/instagram-bstrap.jpg";
 
 class Projects extends React.Component {
 	constructor(props) {

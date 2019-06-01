@@ -7,7 +7,7 @@ background-color: $color-white;
 text-align: center;
 
 &--center {
-    width: 100vw;
+  width: 100vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
