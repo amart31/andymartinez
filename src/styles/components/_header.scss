@@ -4,6 +4,9 @@
     background-size: cover;
     background-position: top;
     position: relative;
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     
     padding-top: 5rem; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   
@@ -40,4 +43,7 @@
     }
 }
 
+}
+.extra {
+    background-color: $color-white-dark;
 }

@@ -1,17 +1,4 @@
 import React from "react";
-import {
-	Button,
-	Modal,
-	ModalHeader,
-	ModalBody,
-	ModalFooter,
-	Card,
-	CardImg,
-	CardBody,
-	CardTitle,
-	CardSubtitle,
-	CardFooter
-} from "reactstrap";
 
 import Title from "./title";
 
@@ -23,35 +10,7 @@ import CodeImage from "../../img/code.jpg";
 import InstagramBstrap from "../../img/instagram-bstrap.jpg";
 
 class Projects extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			modal: false
-		};
-
-		this.toggleModal = this.toggleModal.bind(this);
-	}
-
-	toggleModal() {
-		this.setState(prevState => ({
-			modal: !prevState.modal
-		}));
-	}
-
 	render() {
-		const modalStyle = {
-			border: "0",
-			borderRadius: "4px",
-			bottom: "auto",
-			minHeight: "10rem",
-			left: "50%",
-			padding: ".5rem",
-			position: "fixed",
-			right: "auto",
-			top: "50%",
-			transform: "translate(-50%,-50%)",
-			width: "80%"
-		};
 		const projects = [
 			{
 				title: "React Closet",
@@ -59,7 +18,7 @@ class Projects extends React.Component {
 				link: "https://github.com/amart31/final-project-frontend",
 				info: "React | WP | Vanilla Js | PHP | Bootstrap | HTML & CSS",
 				description:
-					"This project leverages WordPress REST API along with ReactJs to create a full range e-commerce marketplace. Users can add products to their cart or save them under their Wishlist. The site uses JWT for authentication and allows new users to register and also login/logout. Users can also create their own products with the ACF plugin where it is added to the marketplace live, users can shop by categories or by all products."
+					"This project leverages WordPress REST API along with ReactJs to create an e-commerce marketplace. Users can add products to their cart or save them under their Wishlist. JWT is used for authentication. Users can also create their own products and shop by categories."
 			},
 			{
 				title: "React Resort App",
@@ -67,7 +26,7 @@ class Projects extends React.Component {
 				link: "https://github.com/amart31/react-resort",
 				info: "React | ContetFul | Vanilla Js | Netlify | HTML & CSS | Restful API ",
 				description:
-					"Web App for a resort business created with React and hosted on Netlify, project is coming live soon."
+					"Web App created for a resort business made with ReactJS and hosted on Netlify, project will be coming live soon."
 			},
 			{
 				title: "Meetup.com Clone",
@@ -75,7 +34,7 @@ class Projects extends React.Component {
 				link: "https://github.com/amart31/Meetup-Clone",
 				info: "React | WP | Vanilla Js | PHP | Bootstrap | HTML & CSS",
 				description:
-					"This project is a clone of meetup.com, Users can login and logout through JWT and Wordpress is used to store the data consumed."
+					"This project was inspired by meetup.com, Users can login and logout and authentication is handled by JWT, user information is stored in Wordpress and the data consumed in the React frontend."
 			},
 			{
 				title: "Excuse Generator",
@@ -83,7 +42,7 @@ class Projects extends React.Component {
 				link: "https://amart31.github.io/excuse-generator/",
 				info: "React | WP | Vanilla Js | PHP | Bootstrap | HTML & CSS",
 				description:
-					"Excuse generating site that randomly generates escuses by concatenating different arrays. "
+					"Excuse generating site created with Vanilla Js that randomly generates excuses by randomly concatenating different arrays."
 			},
 			{
 				title: "React Todo App",
@@ -91,7 +50,7 @@ class Projects extends React.Component {
 				link: "https://github.com/amart31?tab=repositories",
 				info: "React | Vanilla Js | Bootstrap | HTML & CSS | Coming Soon",
 				description:
-					"React web app that lets the user create and save a list of chores or reminders. The user can save the task for a set amount of time or until checked off."
+					"React web app that lets the user create and save a list of chores or reminders. The user can save the task for a set amount of time or until checked off. Site is coming soon live."
 			},
 			{
 				title: "Instagram Clone",
@@ -103,39 +62,42 @@ class Projects extends React.Component {
 			}
 		];
 		return (
-			<section className="projects" id="projectsList">
+			<div className="projects" id="projectsList">
 				<Title title="Projects" />
 				<div className="projects--center">
 					{projects.map((item, index) => {
 						return (
-							<Card key={index} className="card--project">
-								<CardImg top className="card--project--img" src={item.img} alt="Card image cap" />
-								<CardBody>
-									<CardTitle>{item.title}</CardTitle>
-									<CardSubtitle>{item.info}</CardSubtitle>
-								</CardBody>
-								<CardFooter>
-									<Button className="btn--project-card" onClick={this.toggleModal}>
-										See More
-									</Button>
-								</CardFooter>
-
-								<Modal isOpen={this.state.modal} toggle={this.toggleModal} style={modalStyle}>
-									<ModalHeader toggle={this.toggleModal}>{item.title}</ModalHeader>
-									<ModalBody>
-										<p>{item.description}</p>
-									</ModalBody>
-									<ModalFooter>
-										<a href={item.link}>
-											<Button color="info">Live Demo</Button>
+							<div key={index} className="card">
+								<div className="card__side card__side--front">
+									<div className="card__picture card__picture--1">
+										<img className="card__picture card__picture--1" src={item.img} alt="image" />
+									</div>
+									<h4 className="card__heading">
+										<span className="card__heading-span--1">{item.title}</span>
+									</h4>
+									<div className="card__details">
+										<ul>
+											<li>Responsive</li>
+											<li>Scalable</li>
+											<li>Interactive</li>
+										</ul>
+									</div>
+								</div>
+								<div className="card__side card__side--back card__side--back-1">
+									<div className="card__cta">
+										<div className="card__description-box">
+											<p className="card__description-only">{item.description}</p>
+										</div>
+										<a href={item.link} className="btn btn--white">
+											See More
 										</a>
-									</ModalFooter>
-								</Modal>
-							</Card>
+									</div>
+								</div>
+							</div>
 						);
 					})}
 				</div>
-			</section>
+			</div>
 		);
 	}
 }

@@ -12,7 +12,8 @@ ul {
 
 .fab {
     margin-top: .5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
      background: -webkit-linear-gradient(#de6161, #2657eb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+ 
 }

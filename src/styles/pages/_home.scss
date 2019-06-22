@@ -1,3 +1,10 @@
+.social-icon span {
+    display: inline-block;
+    
+    color: $color-grey-dark;
+    font-size: 4rem;
+    margin: 0 2rem .5rem 2rem;
+  }
 .social-icon:hover {
     
             transition: all 0.3s ease;
@@ -22,4 +29,22 @@
 
 .about {
     font-size: 1.6rem;
+}
+
+.nav-style {
+    background-image:linear-gradient(to right bottom, rgba($color-primary-blue, 0.8), rgba($color-primary-blue-light, 0.8));
+}
+
+.section-about {
+    padding: 2rem;
+    color: $color-white;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-blue-light, 0.8), rgba($color-primary-blue, 0.8)), url(../img/code.jpg); 
+    background-size: cover;
+    margin-top: 10rem;
+
+    transform: skewY(-7deg);
+
+    & > * {
+            transform: skewY(7deg);
+    }
 }

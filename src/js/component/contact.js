@@ -30,10 +30,6 @@ export default class Contact extends React.Component {
 		});
 		infoWindow.open(map);
 	}
-
-	validateForm() {
-		return this.state.name.length > 2 && this.state.message.length > 5;
-	}
 	handleChange(event) {
 		this.setState({ value: event.target.value });
 	}
@@ -49,9 +45,17 @@ export default class Contact extends React.Component {
 									<Form
 										action="https://formspree.io/martinez1751@gmail.com"
 										method="POST"
-										className="form">
+										className="form"
+										style={{
+											width: "80%",
+											margin: "auto auto"
+										}}>
 										<FormGroup>
 											<Input
+												style={{
+													height: "3rem",
+													margin: ".5rem"
+												}}
 												type="text"
 												name="name"
 												ref={this.name}
@@ -65,6 +69,10 @@ export default class Contact extends React.Component {
 										</FormGroup>
 										<FormGroup>
 											<Input
+												style={{
+													height: "3rem",
+													margin: ".5rem"
+												}}
 												type="text"
 												name="name"
 												ref={this.email}
@@ -78,11 +86,10 @@ export default class Contact extends React.Component {
 										</FormGroup>
 										<FormGroup>
 											<Input
-												// style={{
-												// 	width: "400px",
-												// 	height: "140px",
-												// 	margin: "0 auto"
-												// }}
+												style={{
+													height: "10rem",
+													margin: ".5rem"
+												}}
 												type="textarea"
 												name="name"
 												ref={this.message}
@@ -97,16 +104,10 @@ export default class Contact extends React.Component {
 										<div className="text-center pb-2">
 											<Button
 												color="primary"
-												//disabled={!this.validateForm()}
-												// 	onClick={() => {
-												// 		this.setState({
-												// 			session: actions.login(
-												// 				this.state.user,
-												// 				this.state.pass
-												// 			)
-												// 		});
-												// 	}}
-											>
+												style={{
+													fontSize: "1.6rem",
+													marginBottom: "2rem"
+												}}>
 												Submit
 											</Button>
 										</div>

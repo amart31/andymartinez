@@ -2,6 +2,8 @@ import React from "react";
 import avatar from "../../img/avatar.jpeg";
 import { Progress } from "reactstrap";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 import PropTypes from "prop-types";
 
 export default class About extends React.Component {
@@ -12,45 +14,49 @@ export default class About extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<div id="about-container" className="content-containers container text-center mt-1">
-					<hr />
-					<div className="row" style={{ marginTop: 3 + "rem" }}>
+				<section className="section-about container text-center">
+					<div className="row" style={{ marginTop: 5 + "rem", marginBottom: 5 + "rem" }}>
 						<div className="col-12 col-lg-6 hidden">
-							<img className="img-fluid avatar--about" src={avatar} />
-							<p className="about pt-3">
-								I am a Full Stack Jr Developer with experience creating responsive, dynamic, and
-								user-friendly applications with ReactJs, Vanilla Js, and much more. Take a look at my
-								work and get in touch!
-							</p>
+							<ScrollAnimation animateIn="fadeInLeft">
+								<img className="img-fluid avatar--about" src={avatar} />
+								<p className="about pt-3">
+									I am a Full Stack Jr Developer with experience creating responsive, dynamic, and
+									user-friendly applications with ReactJs, Vanilla Js, and much more. Take a look at
+									my work and get in touch!
+								</p>
+							</ScrollAnimation>
 						</div>
-						<div className="col-12 col-sm-12 col-md-12 col-lg-6 ">
-							<Progress animated color="danger" value={85} className="skills-progress">
-								React
-							</Progress>
-							<br />
-							<Progress animated color="danger" value={85} className="skills-progress">
-								JavaScript
-							</Progress>
-							<br />
-							<Progress animated color="danger" value={87} className="skills-progress">
-								HTML
-							</Progress>
-							<br />
-							<Progress animated color="danger" value={83} className="skills-progress">
-								CSS
-							</Progress>
-							<br />
-							<Progress animated color="danger" value={76} className="skills-progress">
-								WordPress
-							</Progress>
-							<br />
-							<Progress animated color="danger" value={70} className="skills-progress">
-								PHP
-							</Progress>
+
+						<div className="col-12 col-lg-6">
+							<ScrollAnimation animateIn="fadeInRight">
+								<Progress animated color="success" value={85} className="skills-progress">
+									React
+								</Progress>
+								<br />
+								<Progress animated color="danger" value={85} className="skills-progress">
+									JavaScript
+								</Progress>
+								<br />
+								<Progress animated color="primary" value={87} className="skills-progress">
+									HTML
+								</Progress>
+								<br />
+								<Progress animated color="warning" value={83} className="skills-progress">
+									CSS
+								</Progress>
+								<br />
+								<Progress animated color="info" value={76} className="skills-progress">
+									WordPress
+								</Progress>
+								<br />
+								<Progress animated color="danger" value={70} className="skills-progress">
+									PHP
+								</Progress>
+							</ScrollAnimation>
 							<br />
 						</div>
 					</div>
-				</div>
+				</section>
 			</React.Fragment>
 		);
 	}

@@ -51,7 +51,7 @@ const Resume = () => {
 								<CardImg
 									top
 									className="card--resume--img"
-									src="https://github.com/amart31/andymartinez/blob/master/src/img/logo4geeks.png?raw=true"
+									src="https://github.com/amart31/andymartinez/blob/master/src/img/logo4geeks.jpg?raw=true"
 									alt="Card image cap"
 								/>
 								<CardBody>
@@ -76,11 +76,11 @@ const Resume = () => {
 						<div className="container text-justify">
 							<div className="row mt-1">
 								<div className="col col-xs-10 col-sm-8 col-md-4 col-lg-4 mx-auto pt-2 pb-2">
-									<Card className="projectCard">
+									<Card className="card--resume">
 										<CardImg
 											top
-											className="card-img"
-											src="https://github.com/amart31/andymartinez/blob/master/src/img/logo4geeks.png?raw=true"
+											className="card--resume--img"
+											src="https://github.com/amart31/andymartinez/blob/master/src/img/logo4geeks.jpg?raw=true"
 											alt="Card image cap"
 										/>
 										<CardBody>
@@ -96,11 +96,11 @@ const Resume = () => {
 								</div>
 
 								<div className="col col-xs-10 col-sm-8 col-md-4 col-lg-4 mx-autopt-2 pb-2">
-									<Card className="projectCard">
+									<Card className="card--resume">
 										<CardImg
 											top
-											className="card-img"
-											src="https://github.com/amart31/andymartinez/blob/master/src/img/fiuLogo.png?raw=true"
+											className="card--resume--img"
+											src="https://github.com/amart31/andymartinez/blob/master/src/img/fiuLogo.jpg?raw=true"
 											alt="Card image cap"
 										/>
 										<CardBody>
