@@ -16,7 +16,7 @@ export default class About extends React.Component {
 			<React.Fragment>
 				<section className="section-about container text-center">
 					<div className="row" style={{ marginTop: 5 + "rem", marginBottom: 5 + "rem" }}>
-						<div className="col-12 col-lg-6 hidden">
+						<div className="col-12 col-lg-6">
 							<ScrollAnimation animateIn="fadeInLeft">
 								<img className="img-fluid avatar--about" src={avatar} />
 								<p className="about pt-3">
@@ -27,7 +27,7 @@ export default class About extends React.Component {
 							</ScrollAnimation>
 						</div>
 
-						<div className="col-12 col-lg-6">
+						<div className="col-12 col-lg-6 pt-5">
 							<ScrollAnimation animateIn="fadeInRight">
 								<Progress animated color="success" value={85} className="skills-progress">
 									React
