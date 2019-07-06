@@ -1,21 +1,211 @@
 .card {
-    &--resume {
-        background-color: $color-white;
+    -moz-perspective: 150rem;
+    perspective: 150rem;
+    position: relative;
+    height: 55rem;
+    border: none;
+    object-fit: cover;
+    width: 100%;
+    
+    background-color: $color-white-dark;
+
+
+    &__side {
+        height: 55rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-       // position: relative;
-        //left: 5%; 
-         &--img {
-        height: 15rem;
-        width: 100%;
-        object-fit: scale;
-    }
-        
-        &:hover {
-             transform: translateY(-.3rem);
-    box-shadow: 0 1rem 2rem rgba($color-black,.2);  
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &--front{
+           // background-color: aqua;
         }
         
+        &--back {
+            transform: rotateY(180deg);
+        //bg image (linear gradient) for backside
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-primary-blue-light, $color-primary-blue-dark);
+            }
+
+        }
+    }
+
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0);
+    } 
+
+    //frontside styling
+    &__picture {
+        background-size: contain;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-primary-blue-light, $color-primary-blue-dark, 0.9);
+
+        }
+        // &--2 {
+        //     background-image: linear-gradient(to right bottom, $color-primary-blue-light, $color-primary-blue-dark), url("https://github.com/amart31/andymartinez/blob/master/src/img/excuse-generator.jpg?raw=true");
+    }
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-align: right;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 70%;
+
+    }  
+    &__heading-span {
+        color: $color-white;
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        &--1 {
+            color: $color-white !important;
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-primary-blue-light, .85), 
+            rgba($color-primary-blue-dark, .85));
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+        
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-dark;
+                }
+            }    
+        }
+        &--back {
+            color: $color-white;
+        }
+    }
+
+    //back side styling cta -call to action
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__description-box {
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+
+    &__description-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
     }
     
 }
 
+@media screen and (max-width: 800px) {
+    .hidden {
+        visibility: hidden;
+    }
+
+}
+
+.mobil-card {
+     
+        height: 55rem;
+        border: none;
+        object-fit: cover;
+        width: 100%;
+        
+        background-color: $color-white-dark;
+
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &__picture {
+            background-size: contain;
+            height: 23rem;
+            background-blend-mode: screen;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+
+        }
+        &__heading {
+            font-size: 2.8rem;
+        font-weight: 300;
+        text-align: right;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 70%;
+            &-span {
+                color: $color-white;
+                padding: 1rem 1.5rem;
+                -webkit-box-decoration-break: clone;
+                box-decoration-break: clone;
+                
+                    color: $color-white !important;
+                    background-image: linear-gradient(to right bottom, 
+                    rgba($color-primary-blue-light, .85), 
+                    rgba($color-primary-blue-dark, .85));
+               
+            }
+        }
+        &__details {
+            padding: 3rem;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-dark;
+                }
+            }
+        }
+
+        }
+
+
+    
+}

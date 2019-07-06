@@ -38,6 +38,6 @@ export default Map;
 
 Map.propTypes = {
 	id: PropTypes.string,
-	options: PropTypes.string,
+	options: PropTypes.object,
 	onMapLoad: PropTypes.func
 };
