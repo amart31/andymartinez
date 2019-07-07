@@ -5,6 +5,7 @@ import About from "../component/about";
 import Contact from "../component/contact";
 import Projects from "../component/projects";
 import Services from "../component/services";
+import ImgCollage from "../component/imgCollage";
 
 import { FaFacebook, FaGithubSquare, FaInstagram } from "react-icons/fa";
 
@@ -16,6 +17,8 @@ export class Home extends React.Component {
 				<Services />
 
 				<About />
+
+				<ImgCollage />
 
 				<Projects />
 

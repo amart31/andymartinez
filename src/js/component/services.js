@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { DiHtml5, DiReact, DiJsBadge, DiWordpress } from "react-icons/di";
+import { DiHtml5, DiReact, DiJsBadge, DiWordpress, DiSass, DiBootstrap, DiCss3, DiNodejsSmall } from "react-icons/di";
 
 import Title from "./title";
 
@@ -18,9 +18,29 @@ export default class Services extends Component {
 				info: "Interactive Web Apps"
 			},
 			{
+				icon: <DiNodejsSmall />,
+				title: "NodeJs",
+				info: "Scalable Applications"
+			},
+			{
 				icon: <DiHtml5 />,
 				title: "HTML",
 				info: "Static and Dynamic Applications"
+			},
+			{
+				icon: <DiCss3 />,
+				title: "CSS",
+				info: "Design and Animations"
+			},
+			{
+				icon: <DiSass />,
+				title: "SASS",
+				info: "Powerful Styles"
+			},
+			{
+				icon: <DiBootstrap />,
+				title: "Bootstrap",
+				info: "Mobil First Design"
 			},
 			{
 				icon: <DiWordpress />,

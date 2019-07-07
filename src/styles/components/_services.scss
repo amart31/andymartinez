@@ -20,12 +20,13 @@ text-align: center;
 
 .service span {
   display: inline-block;
-  color: $color-grey-dark;
+  color: $color-primary-blue-dark;
   font-size: 4rem;
   margin-bottom: 1rem;
+
 }
 .service h6 {
-  letter-spacing: .5rem;
+  letter-spacing: .3rem;
   font-size: 1.2rem;
   text-transform: capitalize;
 }
@@ -34,4 +35,10 @@ text-align: center;
   font-size: 1.2rem;
   padding-bottom: 1.5rem;
   margin: 0 auto;
+}
+.service:hover{
+  transition: all 0.3s ease;
+            box-shadow: 1.2rem 1.5rem 2rem 0 rgba($color-blue-gray,0.15);
+            color: rgba(
+                $color-primary-blue, .6);
 }

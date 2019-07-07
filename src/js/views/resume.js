@@ -20,7 +20,7 @@ const Resume = () => {
 							<span className="resume-header--main">{"<Resume />"}</span>
 							<span className="resume-header--sub">Andy Martinez</span>
 						</h1>
-						<Button className="btn-social mr-2" outline href="https://twitter.com/amart1751" color="info">
+						<Button className="btn-social mx-2" outline href="https://twitter.com/amart1751" color="info">
 							Twitter
 						</Button>{" "}
 						<Button className="btn-git mr-2" outline href="https://github.com/amart31" color="info">
@@ -30,7 +30,7 @@ const Resume = () => {
 				</header>
 			</div>
 
-			<div className="container-fluid">
+			<div className="container-fluid resume">
 				<div className="row mt-1">
 					<div className="col">
 						<ScrollAnimation animateIn="zoomIn" animationInDuration={1000}>
@@ -45,8 +45,141 @@ const Resume = () => {
 						</p>
 					</div>
 				</div>
+				<ScrollAnimation animateIn="zoomIn" animationInDuration={1000}>
+					<h4 id="resume" className="text-center text-secondary mt-1">
+						My Experience and Education
+					</h4>
+				</ScrollAnimation>
+				<div className="row d-flex justify-content-center mt-1">
+					<div className="col-xs-10 col-sm-10 col-md-6 col-lg-6 col-xl-4">
+						<div className="timeline">
+							<p className="timeline-p">
+								<Card className="card--resume">
+									<CardImg
+										top
+										className="card--resume--img"
+										src="https://github.com/amart31/andymartinez/blob/master/src/img/code.jpg?raw=true"
+										alt="Card image cap"
+									/>
+									<CardBody>
+										<CardTitle>Coding Instructor</CardTitle>
+										<CardTitle className="text-secondary">2019</CardTitle>
+										<CardSubtitle>Miami, Fl</CardSubtitle>
+										<CardText>
+											Mentoring and leading a group of underprivileged young adults towards a Site
+											Developer Associate certification. Teaching students HTML, CSS, an
+											Javascript and how to implement all three together to create responsive and
+											interactive web games and web pages.{" "}
+										</CardText>
+									</CardBody>
+								</Card>
+							</p>
+							<p className="timeline-p">
+								<Card className="card--resume">
+									<CardImg
+										top
+										className="card--resume--img"
+										src="https://github.com/amart31/andymartinez/blob/master/src/img/code.jpg?raw=true"
+										alt="Card image cap"
+									/>
+									<CardBody>
+										<CardTitle>Frelance Web Developer</CardTitle>
+										<CardTitle className="text-secondary">2019</CardTitle>
+										<CardSubtitle>Miami, Fl</CardSubtitle>
+										<CardText>
+											Developing responsive, dynamic, and interactive websites based on clients
+											expectations. Worked on projects ranging from e-commerce sites to personal
+											websites.{" "}
+										</CardText>
+									</CardBody>
+								</Card>
+							</p>
+							<p className="timeline-p">
+								<Card className="card--resume">
+									<CardImg
+										top
+										className="card--resume--img"
+										src="https://github.com/amart31/andymartinez/blob/master/src/img/code.jpg?raw=true"
+										alt="Card image cap"
+									/>
+									<CardBody>
+										<CardTitle>Coding Instructor</CardTitle>
+										<CardTitle className="text-secondary">2019</CardTitle>
+										<CardSubtitle>Miami, Fl</CardSubtitle>
+										<CardText>
+											Mentoring and leading a group of underprivileged young adults towards a Site
+											Developer Associate certification. Teaching students HTML, CSS, an
+											Javascript and how to implement all three together to create responsive and
+											interactive web games and web pages.{" "}
+										</CardText>
+									</CardBody>
+								</Card>
+							</p>
 
-				<div className="row mt-1">
+							<p className="timeline-p">
+								<Card className="card--resume">
+									<CardImg
+										top
+										className="card--resume--img"
+										src="https://github.com/amart31/andymartinez/blob/master/src/img/code.jpg?raw=true"
+										alt="Card image cap"
+									/>
+									<CardBody>
+										<CardTitle>Coding Instructor</CardTitle>
+										<CardTitle className="text-secondary">2019</CardTitle>
+										<CardSubtitle>Miami, Fl</CardSubtitle>
+										<CardText>
+											Mentoring and leading a group of underprivileged young adults towards a Site
+											Developer Associate certification. Teaching students HTML, CSS, an
+											Javascript and how to implement all three together to create responsive and
+											interactive web games and web pages.{" "}
+										</CardText>
+									</CardBody>
+								</Card>
+							</p>
+
+							<p className="timeline-p">
+								<Card className="card--resume">
+									<CardImg
+										top
+										className="card--resume--img"
+										src="https://github.com/amart31/andymartinez/blob/master/src/img/logo4geeks.jpg?raw=true"
+										alt="Card image cap"
+									/>
+									<CardBody>
+										<CardTitle>Full Stack Web Developer</CardTitle>
+										<CardTitle className="text-secondary">2019</CardTitle>
+										<CardSubtitle>4Geeks Academy</CardSubtitle>
+										<CardText>
+											Project-based Full-Stack Software Development program teaching HTML5, CSS3,
+											SASS, React.js, Webpack, PHP, WordPress, RESTful API, MySQL, HTTP
+											Architecture, AJAX, MVC, ORM, Git, and much more.
+										</CardText>
+									</CardBody>
+								</Card>
+							</p>
+							<p className="timeline-p">
+								<Card className="card--resume">
+									<CardImg
+										top
+										className="card--resume--img"
+										src="https://github.com/amart31/andymartinez/blob/master/src/img/fiuLogo.jpg?raw=true"
+										alt="Card image cap"
+									/>
+									<CardBody>
+										<CardTitle>Bs Criminal Justice</CardTitle>
+										<CardTitle className="text-secondary">2012-2016</CardTitle>
+										<CardSubtitle>Florida International University</CardSubtitle>
+										<CardText>3.2 GPA. Deans List 2015, 2016. </CardText>
+									</CardBody>
+								</Card>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* <div className="row mt-1">
 					<div className="col-12 mx-auto">
 						<h4 className="text-center text-secondary">Work History</h4>
 					</div>
@@ -155,7 +288,7 @@ const Resume = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+						</div> */}
 		</React.Fragment>
 	);
 };

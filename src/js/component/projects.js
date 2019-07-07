@@ -65,7 +65,10 @@ class Projects extends React.Component {
 						<div className="row">
 							{projects.map((item, index) => {
 								return (
-									<div key={index} className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+									<div
+										key={index}
+										id="projects"
+										className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
 										<div className="card my-5">
 											<div className="card__side card__side--front">
 												<div className="card__picture card__picture--1">
