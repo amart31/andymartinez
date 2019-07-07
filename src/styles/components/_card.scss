@@ -142,7 +142,7 @@
 
 .mobil-card {
      
-        height: 55rem;
+        height: 60rem;
         border: none;
         object-fit: cover;
         width: 100%;
@@ -188,6 +188,7 @@
         }
         &__details {
             padding: 3rem;
+            margin-bottom: 5px;
         ul {
             list-style: none;
             width: 80%;

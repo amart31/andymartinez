@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, FormGroup, Input, Button } from "reactstrap";
+import { Button } from "reactstrap";
 import { Context } from "../store/appContext.js";
 
 import Title from "./title";
@@ -46,76 +46,59 @@ export default class Contact extends React.Component {
 							<div className="container-fluid text-center">
 								<div className="row" style={{ marginTop: 3 + "rem" }}>
 									<div className="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
-										<Form
+										<form
 											action="https://formspree.io/martinez1751@gmail.com"
-											method="POST"
 											className="form"
-											style={{
-												width: "80%",
-												margin: "auto auto"
-											}}>
-											<FormGroup>
-												<Input
-													style={{
-														height: "3rem",
-														margin: ".5rem"
-													}}
-													type="text"
-													name="name"
-													ref={this.name}
-													placeholder="Name"
-													onChange={e =>
-														this.setState({
-															name: e.target.value
-														})
-													}
-												/>
-											</FormGroup>
-											<FormGroup>
-												<Input
-													style={{
-														height: "3rem",
-														margin: ".5rem"
-													}}
-													type="text"
-													name="name"
-													ref={this.email}
-													placeholder="Email"
-													onChange={e =>
-														this.setState({
-															email: e.target.value
-														})
-													}
-												/>
-											</FormGroup>
-											<FormGroup>
-												<Input
-													style={{
-														height: "10rem",
-														margin: ".5rem"
-													}}
-													type="textarea"
-													name="name"
-													ref={this.message}
-													placeholder="Tell me something"
-													onChange={e =>
-														this.setState({
-															message: e.target.value
-														})
-													}
-												/>
-											</FormGroup>
-											<div className="text-center pb-2">
-												<Button
-													color="primary"
-													style={{
-														fontSize: "1.6rem",
-														marginBottom: "2rem"
-													}}>
-													Submit
-												</Button>
+											method="POST">
+											<div className="form-title">
+												<h4 className="pb-1">Get in Touch</h4>
 											</div>
-										</Form>
+
+											<div className="form__group">
+												<input
+													type="text"
+													className="form__input"
+													placeholder="Your Name"
+													id="name"
+													requiered
+												/>
+												<label htmlFor="name" className="form_label">
+													Your Name
+												</label>
+											</div>
+											<div className="form__group">
+												<input
+													type="email"
+													className="form__input"
+													placeholder="Your Email"
+													id="email"
+													requiered
+												/>
+												<label htmlFor="email" className="form_label">
+													Your Email
+												</label>
+											</div>
+											<div className="form__group">
+												<label htmlFor="message" className="form_label">
+													Message
+												</label>
+												<textarea
+													type="text"
+													className="form__input"
+													placeholder="Your Message"
+													id="message"
+													requiered
+												/>
+											</div>
+											<Button
+												color="primary"
+												style={{
+													fontSize: "1.6rem",
+													marginBottom: "2rem"
+												}}>
+												Submit
+											</Button>
+										</form>
 									</div>
 									<div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 mx-auto">
 										<Map

@@ -137,6 +137,9 @@ class Projects extends React.Component {
 													<li>{item.info[4]}</li>
 													<li>{item.info[5]}</li>
 												</ul>
+												<a href={item.link} className="btn btn--white">
+													See More
+												</a>
 											</div>
 										</div>
 									</div>
