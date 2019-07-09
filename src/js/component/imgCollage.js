@@ -70,7 +70,7 @@ class ImgCollage extends React.Component {
 								/>
 							</div>
 						</div>
-						<div className="col-6">
+						<div className="col-6 m-auto">
 							{this.state.isHovering && (
 								<div className="info-card">
 									<h5>Interactive and Scalable Solutions</h5>

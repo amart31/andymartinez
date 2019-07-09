@@ -38,15 +38,16 @@
 }
 
 .section-about {
-    padding: 2rem;
+    padding: 15rem 2rem;
     color: $color-white;
-    background-image: linear-gradient(to right bottom, rgba($color-primary-blue-light, 0.8), rgba($color-primary-blue, 0.8)), url(../img/code.jpg); 
+    width: 100%;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-blue-light, 0.5), rgba($color-primary-blue, 0.5)), url(../img/tech.jpg); 
     background-size: cover;
-    margin-top: 10rem;
+    //margin-top: 10rem;
 
-    transform: skewY(-7deg);
+    //transform: skewY(-7deg);
 
     & > * {
-            transform: skewY(7deg);
+     //       transform: skewY(7deg);
     }
 }

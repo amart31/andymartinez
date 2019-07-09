@@ -1,26 +1,24 @@
 .section-split {
-    margin: 10rem 0 0 0;
+   // margin: 10rem 0 0 0;
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-blue-light, $color-primary-blue-dark);
     background-size: cover;
 }
 
 .split {
-    background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%), url(../img/b-w-bridge.jpg);
+    background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%,        transparent 50%), url(../img/b-w-bridge.jpg);
     background-size: cover;
     width: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
     height: 50rem;               
 }
-
 .composition {
     position: relative;
     display: block;
     width: 100%;
     height: 40rem;
-    margin: 8rem 0;
-
+    padding: 8rem 0;
     &__photo {
         width: auto;
         height: 60%;
@@ -30,21 +28,24 @@
         z-index: 10;
         transition: all .2s;
         outline-offset: 2rem;
-
-
         &--p1 {
             left: 10%;
             top: 2%;
+            width: 60%;
+            object-fit: cover;
         }
         &--p2 {
             right: 5%;
             top: 10%;
+            width: 60%;
+            object-fit: cover;
         }
         &--p3 {
             left: 25%;
             top: 25%;
+            width: 60%;
+            object-fit: cover;
         }
-
         &:hover {
             outline: 1.5rem solid $color-primary-blue-light;
             transform: scale(1.05) translateY(-.5rem);
@@ -52,12 +53,10 @@
             z-index: 20;
         }
     }
-
     &:hover &__photo:not(:hover) {
         transform: scale(.95);
     }
 }
-
 .info-card {
     display: inline;
     width: 100%;
@@ -65,7 +64,6 @@
     //margin: 20rem;
     font-size: 2rem;
     color: $color-white;
-
     & h5 {
         text-transform: uppercase;
     }
