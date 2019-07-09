@@ -12,18 +12,13 @@ import { FaFacebook, FaGithubSquare, FaInstagram } from "react-icons/fa";
 export class Home extends React.Component {
 	render() {
 		return (
-			<React.Fragment>
+			<div>
 				<Header />
 				<Services />
-
 				<About />
-
 				<ImgCollage />
-
 				<Projects />
-
 				<Contact />
-
 				<div className="container-fluid">
 					<div className="row p-3 footer-sec">
 						<div className="col text-center">
@@ -47,7 +42,7 @@ export class Home extends React.Component {
 						</div>
 					</div>
 				</div>
-			</React.Fragment>
+			</div>
 		);
 	}
 }

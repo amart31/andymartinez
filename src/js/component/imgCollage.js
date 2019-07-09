@@ -4,8 +4,6 @@ import reactCloset from "../../img/react-closet.jpg";
 import reactReseort from "../../img/react-resort.jpg";
 import igClone from "../../img/instagram-bstrap.jpg";
 
-import { Row, Col } from "reactstrap";
-
 import { DiHtml5, DiReact, DiJsBadge, DiWordpress, DiSass, DiBootstrap, DiCss3, DiNodejsSmall } from "react-icons/di";
 
 class ImgCollage extends React.Component {
@@ -44,8 +42,8 @@ class ImgCollage extends React.Component {
 		return (
 			<section className="section-split">
 				{isDesktop ? (
-					<Row className="split">
-						<Col xs="6">
+					<div className="split">
+						<div className="col-6">
 							<div className="composition">
 								<img
 									src={igClone}
@@ -71,8 +69,8 @@ class ImgCollage extends React.Component {
 									className="composition__photo composition__photo--p3"
 								/>
 							</div>
-						</Col>
-						<Col xs="6">
+						</div>
+						<div className="col-6">
 							{this.state.isHovering && (
 								<div className="info-card">
 									<h5>Interactive and Scalable Solutions</h5>
@@ -84,11 +82,11 @@ class ImgCollage extends React.Component {
 									</p>
 								</div>
 							)}
-						</Col>
-					</Row>
+						</div>
+					</div>
 				) : (
-					<Row>
-						<Col xs="12">
+					<div>
+						<div className="col-12">
 							<div className="composition">
 								<img
 									src={igClone}
@@ -119,8 +117,8 @@ class ImgCollage extends React.Component {
 								<DiCss3 />
 								<DiNodejsSmall />
 							</span>
-						</Col>
-					</Row>
+						</div>
+					</div>
 				)}
 			</section>
 		);

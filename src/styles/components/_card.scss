@@ -182,13 +182,12 @@
                     color: $color-white !important;
                     background-image: linear-gradient(to right bottom, 
                     rgba($color-primary-blue-light, .85), 
-                    rgba($color-primary-blue-dark, .85));
-               
+                    rgba($color-primary-blue-dark, .85));               
             }
         }
         &__details {
             padding: 3rem;
-            margin-bottom: 5px;
+            margin: 5px;
         ul {
             list-style: none;
             width: 80%;
