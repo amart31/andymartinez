@@ -19,10 +19,7 @@ const Resume = () => {
 						<h1 className="header-primary">
 							<span className="resume-header--main">{"<Resume />"}</span>
 							<span className="resume-header--sub">Andy Martinez</span>
-						</h1>
-						<Button className="btn-social mx-2" outline href="https://twitter.com/amart1751" color="info">
-							Twitter
-						</Button>{" "}
+						</h1>{" "}
 						<Button className="btn-git mr-2" outline href="https://github.com/amart31" color="info">
 							Github
 						</Button>

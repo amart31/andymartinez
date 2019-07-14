@@ -1,6 +1,12 @@
 .footer {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+
+    & a {
+        text-decoration: none;
+    }
 }
+
+
 
 i:hover {
     transform: scale(1.3);

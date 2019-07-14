@@ -9,8 +9,22 @@
     
             transition: all 0.3s ease;
             box-shadow: 1.2rem 1.5rem 2rem 0 rgba($color-blue-gray,0.15);
-            color: rgba(
-                $color-primary-blue, .6);
+                
+}
+.social-icon--twitter:hover {
+    color: #38A1F3;
+}
+.social-icon--github:hover {
+    color: #211f1f;
+}
+.social-icon--linkedin:hover {
+    color: #0077B5;
+}
+
+
+.social-icon a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .skills-progress:hover {

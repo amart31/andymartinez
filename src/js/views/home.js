@@ -7,7 +7,7 @@ import Projects from "../component/projects";
 import Services from "../component/services";
 import ImgCollage from "../component/imgCollage";
 
-import { FaFacebook, FaGithubSquare, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 export class Home extends React.Component {
 	render() {
@@ -22,21 +22,30 @@ export class Home extends React.Component {
 				<div className="container-fluid">
 					<div className="row p-3 footer-sec">
 						<div className="col text-center">
-							<div className="d-inline-flex social-icon">
+							<div className="d-inline-flex social-icon social-icon--twitter">
 								<span>
-									<FaFacebook />
+									<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/amart1751">
+										<FaTwitter />
+									</a>
 								</span>
 							</div>
 							{"  "}
-							<div className="d-inline-flex social-icon">
+							<div className="d-inline-flex social-icon social-icon--github">
 								<span>
-									<FaGithubSquare />
+									<a target="_blank" rel="noopener noreferrer" href="https://github.com/amart31">
+										<FaGithubSquare />
+									</a>
 								</span>
 							</div>
 							{"  "}
-							<div className="d-inline-flex social-icon">
+							<div className="d-inline-flex social-icon social-icon--linkedin">
 								<span>
-									<FaInstagram />
+									<a
+										target="_blank"
+										rel="noopener noreferrer"
+										href="https://www.linkedin.com/in/amart1751/">
+										<FaLinkedin />
+									</a>
 								</span>
 							</div>
 						</div>
