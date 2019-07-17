@@ -5,8 +5,12 @@
     & h4 {
           font-size: 2rem;
   letter-spacing: .3rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
   margin-bottom: 1rem;
+
+  &:hover {
+    color: $color-primary-blue-light;
+  }
     }
     
     & div {

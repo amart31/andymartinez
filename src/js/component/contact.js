@@ -39,7 +39,7 @@ export default class Contact extends React.Component {
 	render() {
 		return (
 			<>
-				<Title title="Contact Me" />
+				<Title title="contact" />
 				<Context.Consumer>
 					{({ store, actions }) => {
 						return (

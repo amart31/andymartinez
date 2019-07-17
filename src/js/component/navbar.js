@@ -8,9 +8,9 @@ export class Navbar extends React.Component {
 				<Link to="/">
 					<span className="navbar-brand h2">Andy Martinez</span>
 				</Link>
-				<div className="ml-auto">
+				<div className="ml-auto p-2">
 					<Link to="/resume">
-						<button type="button" className="btn btn--nav btn-outline-secondary">
+						<button type="button" className="btn btn--nav btn-outline-secondary p-2">
 							Resume
 						</button>
 					</Link>

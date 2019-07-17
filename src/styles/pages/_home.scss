@@ -45,6 +45,10 @@
 
 .about {
     font-size: 1.6rem;
+
+    &:hover {
+        color: #211f1f;
+    }
 }
 
 .nav-style {
@@ -52,8 +56,10 @@
 }
 
 .section-about {
-    padding: 15rem 2rem;
+    padding: 15rem 5rem;
     color: $color-white;
+    text-align: center;
+    font-weight: 500;
     width: 100%;
     background-image: linear-gradient(to right bottom, rgba($color-primary-blue-light, 0.5), rgba($color-primary-blue, 0.5)), url(../img/tech.jpg); 
     background-size: cover;
