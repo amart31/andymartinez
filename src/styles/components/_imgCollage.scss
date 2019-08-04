@@ -20,7 +20,8 @@
     height: 40rem;
     padding: 8rem 0;
     &__photo {
-        width: auto;
+        width: 63%;
+        object-fit: cover;
         height: 60%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         border-radius: 2px;
@@ -30,21 +31,19 @@
         outline-offset: 2rem;
         &--p1 {
             left: 10%;
-            top: 2%;
-            width: 60%;
-            object-fit: cover;
+            top: 5%;
         }
         &--p2 {
-            right: 5%;
-            top: 10%;
-            width: 60%;
-            object-fit: cover;
+            left: 20%;
+            top: 15%;
         }
         &--p3 {
-            left: 25%;
+            left: 15%;
             top: 25%;
-            width: 60%;
-            object-fit: cover;
+        }
+        &--p4 {
+            left: 25%;
+            top: 35%;
         }
         &:hover {
             outline: 1.5rem solid $color-primary-blue-light;
@@ -61,9 +60,9 @@
     display: inline;
     width: 100%;
     height: 40rem;
-    //margin: 20rem;
+    margin-right: 10rem;
     font-size: 2rem;
-    color: $color-white;
+    color: $color-aqua-blue;
     & h5 {
         text-transform: uppercase;
     }

@@ -1,10 +1,8 @@
-@import "abstracts/mixins";
 @import "abstracts/variables";
 
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
-@import "base/utilities";
 
 @import "components/avatar";
 @import "components/buttons";
@@ -18,8 +16,6 @@
 @import "components/resumeHeader";
 @import "components/services";
 @import "components/title";
-
-@import "layout/grid";
 
 @import "pages/home";
 @import "pages/resume";
