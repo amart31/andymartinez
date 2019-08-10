@@ -6,7 +6,7 @@ import { Home } from "./views/home";
 import Resume from "./views/resume";
 import injectContext from "./store/appContext";
 
-import { Navbar } from "./component/navbar";
+import { NavBar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
 //create your first component
@@ -20,7 +20,7 @@ export class Layout extends React.Component {
 			<div className="d-flex flex-column h-100">
 				<BrowserRouter basename={basename}>
 					<ScrollToTop>
-						<Navbar />
+						<NavBar />
 						<Switch>
 							<Route exact path="/" component={Home} />
 							<Route path="/home" component={Home} />

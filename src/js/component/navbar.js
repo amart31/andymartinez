@@ -1,21 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export class Navbar extends React.Component {
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
+
+export class NavBar extends React.Component {
+	constructor(props) {
+		super(props);
+
+		this.toggle = this.toggle.bind(this);
+		this.state = {
+			isOpen: false
+		};
+	}
+	toggle() {
+		this.setState({
+			isOpen: !this.state.isOpen
+		});
+	}
 	render() {
 		return (
-			<nav className="navbar nav-style">
-				<Link to="/">
-					<span className="navbar-brand h2">Andy Martinez</span>
-				</Link>
-				<div className="ml-auto p-2">
-					<Link to="/resume">
-						<button type="button" className="btn btn--nav btn-outline-secondary p-2">
-							Resume
-						</button>
-					</Link>
-				</div>
-			</nav>
+			<Navbar className="nav-style" light expand="md">
+				<NavbarBrand href="/">Andy Martinez</NavbarBrand>
+				<NavbarToggler onClick={this.toggle} />
+				<Collapse isOpen={this.state.isOpen} navbar>
+					<Nav className="ml-auto" navbar>
+						<NavItem>
+							<NavLink href="/resume/">Resume</NavLink>
+						</NavItem>
+					</Nav>
+				</Collapse>
+			</Navbar>
 		);
 	}
 }

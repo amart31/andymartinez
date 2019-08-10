@@ -1,13 +1,12 @@
 .nav-style {
     padding: 1rem;
 }
-.navbar-brand {
+a.navbar-brand {
     padding: .9rem;
     font-size: 2rem;
-     color: $color-white;
 }
 
-.btn--nav {
+a.nav-link {
     font-size: 1.6rem;
     padding: .9rem;
     margin-right: .9rem;
