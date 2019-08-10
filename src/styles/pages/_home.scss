@@ -71,3 +71,13 @@
      //       transform: skewY(7deg);
     }
 }
+
+.section-contact {
+    overflow: hidden;
+    color: $color-primary-blue-dark;
+
+    background-image: url("../img/contact-bg.jpg"); 
+    background-size: cover;
+    background-position: center center;
+  background-repeat: no-repeat;
+}

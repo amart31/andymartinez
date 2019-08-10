@@ -12,7 +12,7 @@
         border: none;
         border-bottom: 3px solid $color-primary-blue-light transparent;
         width: 90%;
-        display: block;
+        display: inline-block;
     }
 
     &__input:focus {

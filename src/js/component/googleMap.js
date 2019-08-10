@@ -1,43 +1,74 @@
 import React, { Component } from "react";
+import { GoogleApiWrapper, InfoWindow, Map, Marker } from "google-maps-react";
+
 import PropTypes from "prop-types";
 
-class Map extends Component {
+class GoogleMap extends Component {
 	constructor(props) {
 		super(props);
-		this.onScriptLoad = this.onScriptLoad.bind(this);
+		this.state = {
+			showingInfoWindow: false,
+			activeMarker: {},
+			selectedPlace: {}
+		};
+		this.onMarkerClick = this.onMarkerClick.bind(this);
+		this.onMapClick = this.onMapClick.bind(this);
 	}
 
-	onScriptLoad() {
-		const map = new window.google.maps.Map(document.getElementById(this.props.id), this.props.options);
-		this.props.onMapLoad(map);
-	}
+	onMarkerClick = (props, marker, e) => {
+		this.setState({
+			selectedPlace: props,
+			activeMarker: marker,
+			showingInfoWindow: true
+		});
+	};
 
-	componentDidMount() {
-		if (!window.google) {
-			var s = document.createElement("script");
-			s.type = "text/javascript";
-			s.src = `https://maps.google.com/maps/api/js?key=AIzaSyCxgjZlpdVf4kYfep_ST7er_1ilY-POMUc`;
-			var x = document.getElementsByTagName("script")[0];
-			x.parentNode.insertBefore(s, x);
-			// Below is important.
-			//We cannot access google.maps until it's finished loading
-			s.addEventListener("load", e => {
-				this.onScriptLoad();
+	onMapClick = props => {
+		if (this.state.showingInfoWindow) {
+			this.setState({
+				showingInfoWindow: false,
+				activeMarker: null
 			});
-		} else {
-			this.onScriptLoad();
 		}
-	}
-
+	};
 	render() {
-		return <div style={{ width: 95 + "%", height: 350 }} id={this.props.id} />;
+		const style = {
+			width: "90%",
+			height: "90%"
+		};
+		return (
+			<Map
+				style={style}
+				google={this.props.google}
+				onClick={this.onMapClick}
+				zoom={14}
+				initialCenter={{ lat: 25.77386, lng: -80.19498 }}>
+				<Marker
+					onClick={this.onMarkerClick}
+					title={"Andy Martinez"}
+					position={{ lat: 25.77386, lng: -80.19498 }}
+					name={"Andy Martinez"}
+				/>
+				<InfoWindow marker={this.state.activeMarker} visible={this.state.showingInfoWindow}>
+					<div>
+						<h3>Andy Martinez</h3>
+						<address>
+							Lets Chat
+							<br />
+							786-470-7570
+							<br />
+							Miami, FL
+						</address>
+					</div>
+				</InfoWindow>
+			</Map>
+		);
 	}
 }
-
-export default Map;
-
-Map.propTypes = {
-	id: PropTypes.string,
-	options: PropTypes.object,
-	onMapLoad: PropTypes.func
+GoogleMap.propTypes = {
+	google: PropTypes.object
 };
+
+export default GoogleApiWrapper({
+	apiKey: "AIzaSyCGYZ5YWTqPvL_finwMzHyduzUO-ox8aiE"
+})(GoogleMap);

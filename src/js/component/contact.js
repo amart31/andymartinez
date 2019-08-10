@@ -3,9 +3,7 @@ import { Button } from "reactstrap";
 import { Context } from "../store/appContext.js";
 
 import Title from "./title";
-
-import Map from "./googleMap";
-import InfoWindow from "./infoWindow";
+import GoogleMap from "../component/googleMap";
 
 export default class Contact extends React.Component {
 	constructor(props) {
@@ -15,23 +13,12 @@ export default class Contact extends React.Component {
 			email: "",
 			message: ""
 		};
-		this.createInfoWindow = this.createInfoWindow.bind(this);
 
 		this.name = React.createRef();
 		this.email = React.createRef();
 		this.message = React.createRef();
 	}
 
-	createInfoWindow(e, map) {
-		const infoWindow = new window.google.maps.InfoWindow({
-			content: '<div id="infoWindow" />',
-			position: { lat: e.latLng.lat(), lng: e.latLng.lng() }
-		});
-		infoWindow.addListener("DOMContentLoaded", e => {
-			e.render(<InfoWindow />, document.querySelector("#infoWindow"));
-		});
-		infoWindow.open(map);
-	}
 	handleChange(event) {
 		this.setState({ value: event.target.value });
 	}
@@ -43,7 +30,7 @@ export default class Contact extends React.Component {
 				<Context.Consumer>
 					{({ store, actions }) => {
 						return (
-							<div className="container-fluid text-center">
+							<div className="container-fluid text-center section-contact">
 								<div className="row" style={{ marginTop: 3 + "rem" }}>
 									<div className="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
 										<form
@@ -95,29 +82,15 @@ export default class Contact extends React.Component {
 												style={{
 													fontSize: "1.6rem",
 													marginBottom: "2rem"
-												}}>
+												}}
+												type="submit"
+												value="Send">
 												Submit
 											</Button>
 										</form>
 									</div>
 									<div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 mx-auto">
-										<Map
-											id="myMap"
-											options={{
-												center: { lat: 25.77386, lng: -80.19498 },
-												zoom: 13
-											}}
-											onMapLoad={map => {
-												const marker = new window.google.maps.Marker({
-													position: { lat: 25.77386, lng: -80.19498 },
-													map: map,
-													title: "Hello Miami!"
-												});
-												marker.addListener("click", e => {
-													this.createInfoWindow(e, map);
-												});
-											}}
-										/>
+										<GoogleMap />
 									</div>
 								</div>
 							</div>
