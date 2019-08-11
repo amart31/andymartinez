@@ -1,12 +1,12 @@
 .section-split {
    // margin: 10rem 0 0 0;
-    padding: 15rem 0;
+    padding: 5rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-blue-light, $color-primary-blue-dark);
     background-size: cover;
 }
 
 .split {
-    background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%,        transparent 50%), url(../img/b-w-bridge.jpg);
+    background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%), url(../img/b-w-bridge.jpg);
     background-size: cover;
     width: 100%;
     border-radius: 3px;
@@ -72,4 +72,15 @@
     }
     
 }
+
+.mobil-img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+
+    &--1{
+        margin-bottom: 3rem;
+    }
+}
+
 

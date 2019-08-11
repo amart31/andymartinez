@@ -5,6 +5,8 @@ import excuseGenerator from "../../img/excuse-generator.png";
 import igClone from "../../img/instagram-bstrap.jpg";
 import TodoApp from "../../img/todo-app.png";
 
+import Title from "./title";
+
 import { DiHtml5, DiReact, DiJsBadge, DiWordpress, DiSass, DiBootstrap, DiCss3, DiNodejsSmall } from "react-icons/di";
 
 class ImgCollage extends React.Component {
@@ -110,24 +112,32 @@ class ImgCollage extends React.Component {
 						</div>
 					</div>
 				) : (
-					<div>
-						<div className="col-12">
-							<div className="composition">
-								<img
-									src={igClone}
-									alt="instagram-clone"
-									className="composition__photo composition__photo--p1"
-								/>
-								<img
-									src={reactCloset}
-									alt="react-closet"
-									className="composition__photo composition__photo--p2"
-								/>
-								<img
-									src={excuseGenerator}
-									alt="react-resort"
-									className="composition__photo composition__photo--p3"
-								/>
+					<div className="container">
+						<Title title="See More" />
+						<div className="row img-row">
+							<div className="col-12">
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://amart31.github.io/todo-app-react-hooks/">
+									<img src={TodoApp} alt="todo-app" className="mobil-img mobil-img--1" />
+								</a>
+							</div>
+							<div className="col-12">
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://amart31.github.io/Instagram-photo-grid-clone/">
+									<img src={igClone} alt="instagram-clone" className="mobil-img mobil-img--1" />
+								</a>
+							</div>
+							<div className="col-12">
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://amart31.github.io/excuse-generator/">
+									<img src={excuseGenerator} alt="excuse-generator" className="mobil-img" />
+								</a>
 							</div>
 							<br />
 							<span className="hidden" style={{ margin: "0 auto" }}>
