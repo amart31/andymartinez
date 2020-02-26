@@ -1,15 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 
 import reactCloset from "../../img/react-closet.jpg";
 import excuseGenerator from "../../img/excuse-generator.png";
 import igClone from "../../img/instagram-bstrap.jpg";
 import TodoApp from "../../img/todo-app.png";
 
-import Title from "./title";
+import { Title } from "./title";
 
 import { DiHtml5, DiReact, DiJsBadge, DiWordpress, DiSass, DiBootstrap, DiCss3, DiNodejsSmall } from "react-icons/di";
 
-class ImgCollage extends React.Component {
+export default class ImgCollage extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -157,5 +157,3 @@ class ImgCollage extends React.Component {
 		);
 	}
 }
-
-export default ImgCollage;

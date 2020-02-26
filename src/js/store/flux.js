@@ -1,6 +1,40 @@
-const getState = ({ getStore, setStore }) => {
+const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			skills: [
+				{
+					title: "Pega",
+					value: 85
+				},
+				{
+					title: "Java",
+					value: 80
+				},
+				{
+					title: "PostgreSQL",
+					value: 78
+				},
+				{
+					title: "ReactJs",
+					value: 75
+				},
+				{
+					title: "Javascript",
+					value: 80
+				},
+				{
+					title: "HTML",
+					value: 80
+				},
+				{
+					title: "CSS",
+					value: 76
+				},
+				{
+					title: "Bootstrap",
+					value: 81
+				}
+			],
 			demo: [
 				{
 					title: "FIRST",
@@ -15,6 +49,15 @@ const getState = ({ getStore, setStore }) => {
 			]
 		},
 		actions: {
+			// Use getActions to call a function within a fuction
+			exampleFunction: () => {
+				getActions().changeColor(0, "green");
+			},
+			loadSomeData: () => {
+				/**
+					fetch().then().then(data => setStore({ "foo": data.bar }))
+				*/
+			},
 			changeColor: (index, color) => {
 				//get the store
 				const store = getStore();

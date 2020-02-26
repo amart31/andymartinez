@@ -8,7 +8,7 @@
 .social-icon:hover {
     
             transition: all 0.3s ease;
-            box-shadow: 1.2rem 1.5rem 2rem 0 rgba($color-blue-gray,0.15);
+            box-shadow: 1.2rem 1.5rem 2rem 0 rgba(#2e3d49,0.15);
                 
 }
 .social-icon--twitter:hover {
@@ -30,7 +30,7 @@
 .skills-progress:hover {
     transition: all 0.3s ease;
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($color-black,.2);
+    box-shadow: 0 1rem 2rem rgba(#000,.2);
         }
         
 .progress {
@@ -52,16 +52,16 @@
 }
 
 .nav-style {
-    background-image:linear-gradient(to right bottom, rgba($color-primary-blue, 0.8), rgba($color-primary-blue-light, 0.8));
+    background-image:linear-gradient(to right bottom, rgba(#1F2555, 0.8), rgba(#344780, 0.8));
 }
 
 .section-about {
     padding: 5rem 5rem;
-    color: $color-white;
+    color: $color-pega-grey-dark;
     text-align: center;
     font-weight: 500;
     width: 100%;
-    background-image: linear-gradient(to right bottom, rgba($color-primary-blue-light, 0.5), rgba($color-primary-blue, 0.5)), url(../img/tech.jpg); 
+    //background-image: linear-gradient(to top, rgba(#A5CBEF, 0.5), rgba($color-primary-blue, 0.5)); 
     background-size: cover;
     //margin-top: 10rem;
 
@@ -74,9 +74,8 @@
 
 .section-contact {
     overflow: hidden;
-    color: $color-primary-blue-dark;
-
-    background-image: url("../img/contact-bg.jpg"); 
+    color: $color-white-dark;
+background-color: $color-primary-pega-light;
     background-size: cover;
     background-position: center center;
   background-repeat: no-repeat;

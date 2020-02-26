@@ -10,7 +10,7 @@
         border-radius: 2px;
         background-color: rgba($color-white, .5);
         border: none;
-        border-bottom: 3px solid $color-primary-blue-light transparent;
+        border-bottom: 3px solid $color-pega-aqua transparent;
         width: 90%;
         display: inline-block;
     }
@@ -18,7 +18,7 @@
     &__input:focus {
         outline: none;
         box-shadow: 0 1rem 2rem rgba($color-black, .1);
-        border-bottom: 3px solid $color-primary-blue-light;
+        border-bottom: 3px solid $color-pega-aqua;
     }
 
 

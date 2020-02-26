@@ -1,86 +1,89 @@
 .section-split {
-   // margin: 10rem 0 0 0;
-    padding: 5rem 0;
-    background-image: linear-gradient(to right bottom, $color-primary-blue-light, $color-primary-blue-dark);
-    background-size: cover;
-}
+    // margin: 10rem 0 0 0;
+     padding: 5rem 0;
+     background-image:linear-gradient(to right bottom, rgba($color-primary-pega-dark, 0.8), rgba($color-primary-pega-light, 0.8));
 
-.split {
-    background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%), url(../img/b-w-bridge.jpg);
-    background-size: cover;
-    width: 100%;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
-    height: 50rem;               
-}
-.composition {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 40rem;
-    padding: 8rem 0;
-    &__photo {
-        width: 63%;
-        object-fit: cover;
-        height: 60%;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-        border-radius: 2px;
-        position: absolute;
-        z-index: 10;
-        transition: all .2s;
-        outline-offset: 2rem;
-        &--p1 {
-            left: 10%;
-            top: 5%;
-        }
-        &--p2 {
-            left: 20%;
-            top: 15%;
-        }
-        &--p3 {
-            left: 15%;
-            top: 25%;
-        }
-        &--p4 {
-            left: 25%;
-            top: 35%;
-        }
-        &:hover {
-            outline: 1.5rem solid $color-primary-blue-light;
-            transform: scale(1.05) translateY(-.5rem);
-            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
-            z-index: 20;
-        }
-    }
-    &:hover &__photo:not(:hover) {
-        transform: scale(.95);
-    }
-}
-.info-card {
-    display: inline;
-    width: 100%;
-    height: 40rem;
-    margin-right: 10rem;
-    font-size: 2rem;
-    color: $color-aqua-blue;
-    & h5 {
-        text-transform: uppercase;
-    }
-    & p {
-        letter-spacing: .9rem;
-        color: $color-aqua-blue;
-    }
-    
-}
-
-.mobil-img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-
-    &--1{
-        margin-bottom: 3rem;
-    }
-}
-
-
+    // background-image: linear-gradient(to bottom, rgba($color-primary-pega, 0.5), rgba(#C3E6E6, 0.5)); 
+     background-size: cover;
+ }
+ 
+ .split {
+     background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%), url(../img/b-w-bridge.jpg);
+     background-size: cover;
+     width: 100%;
+     border-radius: 3px;
+     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+     height: 50rem;               
+ }
+ .composition {
+     position: relative;
+     display: block;
+     width: 100%;
+     height: 40rem;
+     padding: 8rem 0;
+     &__photo {
+         width: 63%;
+         object-fit: cover;
+         height: 60%;
+         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+         border-radius: 2px;
+         position: absolute;
+         z-index: 10;
+         transition: all .2s;
+         outline-offset: 2rem;
+         &--p1 {
+             left: 10%;
+             top: 5%;
+         }
+         &--p2 {
+             left: 20%;
+             top: 15%;
+         }
+         &--p3 {
+             left: 15%;
+             top: 25%;
+         }
+         &--p4 {
+             left: 25%;
+             top: 35%;
+         }
+         &:hover {
+             outline: 1.5rem solid $color-primary-pega-light;
+             transform: scale(1.05) translateY(-.5rem);
+             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+             z-index: 20;
+         }
+     }
+     &:hover &__photo:not(:hover) {
+         transform: scale(.95);
+     }
+ }
+ .info-card {
+     display: inline;
+     width: 100%;
+     height: 40rem;
+     margin-right: 10rem;
+     font-size: 2rem;
+     color: $color-pega-aqua-blue;
+     & h5 {
+         text-transform: uppercase;
+     }
+     & p {
+         letter-spacing: .9rem;
+         color: $color-pega-aqua-blue;
+     }
+     
+ }
+ 
+ .mobil-img {
+     width: 90%;
+     display: block;
+     margin: 0 auto;
+ 
+     &--1{
+         margin-bottom: 3rem;
+     }
+ }
+ 
+ 
+ 

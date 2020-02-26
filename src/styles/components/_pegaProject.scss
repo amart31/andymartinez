@@ -1,0 +1,44 @@
+.section-pega {
+    font-size: 1.6rem;
+    padding: 5rem 5rem;
+    color: $color-white-dark;
+    font-weight: 500;
+    width: 100%;
+    background-image:linear-gradient(to right bottom, rgba($color-primary-pega, 0.8), rgba($color-primary-pega-light, 0.8));
+    //background-image: linear-gradient(to top, rgba($color-primary-pega, 0.5), rgba(#C3E6E6, 0.5)); 
+    background-size: cover;
+}
+
+.pega-list{
+    //margin: 5rem 10rem 0 10rem;
+
+    &--item:hover {
+        color: #211f1f;
+    }
+}
+
+.pega-project {
+    align-self: center;
+	height: 30rem;
+    width: 30rem;
+    //object-fit: cover;	
+	border-radius: .5rem;
+    
+    &:hover {
+        transform: scale(1.15) translateY(-.5rem);
+        z-index: 20;
+		border-radius: 1rem;
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+        border-radius: .5rem;
+        
+        }
+    
+}
+
+.img-wrapper {
+    //display: flex;
+    flex-direction: column;
+}

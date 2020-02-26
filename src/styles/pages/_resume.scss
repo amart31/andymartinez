@@ -1,84 +1,88 @@
 .card--resume {
-    background-color: $color-white;
-    font-size: 1.4rem;
-     width: 100%;
-     height: auto;
-      &--img {
-     height: 40%;
-     width: 100%;
-     object-fit: cover;
- }
-    
-     &:hover {
-          transform: translateY(-.3rem);
- box-shadow: 0 1rem 2rem rgba($color-black,.2);  
-    }
-    
- }
+  background-color: $color-white;
+  font-size: 1.4rem;
+   width: 100%;
+   height: auto;
+    &--img {
+   height: 40%;
+   width: 100%;
+   object-fit: cover;
+}
+  
+   &:hover {
+        transform: translateY(-.3rem);
+box-shadow: 0 1rem 2rem rgba($color-black,.2);  
+  }
+  
+}
 .resume {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 .timeline {
-    margin: 0 auto;
-    
-    padding: 5px;
-    width: 90%;
+  margin: 0 auto;
+  
+  padding: 5px;
+  width: 90%;
 
 }
 
 .timeline .timeline-p {
-  font-size: 1.3rem;
-  line-height: 1.75rem;
-  border-top: 3px solid;
-  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
-  border-image-slice: 1;
-  border-width: 3px;
-  margin: 0;
-  padding: 20px;
-  counter-increment: section;
-  position: relative;
-  color: #34435E;
-  &:before {
-    content: counter(section);
-    position: absolute;
-    border-radius: 50%;
-    padding: 10px;
-    height: 3rem;
-    width: 3rem;
-    background-color: #34435E;
-    text-align: center;
-    line-height: 1.25rem;
-    color: #ffffff;
-    font-size: 1rem;
-  }
+font-size: 1.3rem;
+line-height: 1.75rem;
+border-top: 3px solid;
+border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+border-image-slice: 1;
+border-width: 3px;
+margin: 0;
+padding: 20px;
+counter-increment: section;
+position: relative;
+color: #34435E;
+&:before {
+  content: counter(section);
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 3rem;
+  width: 3rem;
+  background-color: #34435E;
+  text-align: center;
+  line-height: 1.25rem;
+  color: #ffffff;
+  font-size: 1rem;
+}
 }
 //odd number borders
 .timeline-p:nth-child(odd) {
-  border-right: 3px solid;
-  padding-left: 0;
-  
-  &:before {
-    left: 100%; 
-    margin-left: -13px;
-  }
+border-right: 3px solid;
+padding-left: 0;
+
+&:before {
+  left: 100%; 
+  margin-left: -13px;
+}
 }
 //even number borders
 .timeline-p:nth-child(even) {
-  border-left: 3px solid;
-  padding-right: 0;
-  
-  &:before {
-    right: 100%; 
-    margin-right: -13px;
-  }
+border-left: 3px solid;
+padding-right: 0;
+
+&:before {
+  right: 100%; 
+  margin-right: -13px;
+}
 }
 //handle first and last
 .timeline-p:first-child {
-  border-top: 0;
-  border-top-right-radius:0;
-  border-top-left-radius:0;
+border-top: 0;
+border-top-right-radius:0;
+border-top-left-radius:0;
 }
 .timeline-p:last-child {
-  border-bottom-right-radius:0;
-  border-bottom-left-radius:0;
+border-bottom-right-radius:0;
+border-bottom-left-radius:0;
+}
+
+.pega-img{
+  max-width: 100%;
 }

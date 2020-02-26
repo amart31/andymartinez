@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 const date = new Date();
+
 export const Footer = () => (
 	<footer className="footer mt-auto py-3 text-center">
 		<p>

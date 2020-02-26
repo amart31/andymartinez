@@ -1,7 +1,7 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
-const Header = () => {
+export const Header = () => {
 	return (
 		<div className="text-center extra">
 			<header className="header">
@@ -11,8 +11,9 @@ const Header = () => {
 							<span className="header--primary--main">{"<Welcome />"}</span>
 						</ScrollAnimation>
 						<ScrollAnimation animateIn="fadeInRight">
-							<span className="header--primary--sub">created by Andy Martinez</span>
+							<span className="header--primary--sub">created by Andy Martinez </span>
 						</ScrollAnimation>
+						<span className="header--primary--sub2">Pega Certified Senior System Architect</span>
 					</h1>
 
 					<a href="#projectsList" className="btn btn--white">
@@ -23,5 +24,3 @@ const Header = () => {
 		</div>
 	);
 };
-
-export default Header;

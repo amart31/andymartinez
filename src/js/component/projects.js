@@ -1,9 +1,9 @@
 import React from "react";
 
-import Title from "./title";
+import { Title } from "./title";
 
 import ReactCloset from "../../img/react-closet.jpg";
-import ReactResort from "../../img/react-resort.jpg";
+import trmsPic from "../../img/trmsPic.png";
 import MeetupClone from "../../img/meetup-clone.jpg";
 
 class Projects extends React.Component {
@@ -32,20 +32,20 @@ class Projects extends React.Component {
 
 		const projects = [
 			{
+				title: "Java Tuition Reimbursement",
+				img: trmsPic,
+				link: "https://github.com/amart31/NewTrms",
+				info: ["Java", "JDBC", "PostgreSQL", "Javascript", "HTML & CSS", "Bootstrap"],
+				description:
+					"Full stack web application with a Java backend connected to a PostgreSQL database hosted on AWS. Employees and managers can make update to the Database and changes are dynamically reflected. Intended to provide a Tuition Reimbursement System for a company."
+			},
+			{
 				title: "React Closet",
 				img: ReactCloset,
 				link: "https://github.com/amart31/final-project-frontend",
 				info: ["React", "WordPress", "Vanilla Js", "PHP", "Bootstrap", "HTML & CSS/SASS"],
 				description:
 					"This project leverages WordPress REST API along with ReactJs to create an e-commerce marketplace. Users can add products to their cart or save them under their Wishlist. JWT is used for authentication. Users can also create their own products and shop by categories."
-			},
-			{
-				title: "React Resort App",
-				img: ReactResort,
-				link: "https://github.com/amart31/react-resort",
-				info: ["React", "Netlify", "Vanilla Js", "Restful API", "Bootstrap", "HTML & CSS/SASS"],
-				description:
-					"Web App created for a resort business made with ReactJS and hosted on Netlify, project will be coming live soon."
 			},
 			{
 				title: "Meetup.com Clone",

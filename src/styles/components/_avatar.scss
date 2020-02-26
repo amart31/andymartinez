@@ -1,14 +1,14 @@
 .avatar {
-	border-radius: 50%;
 	height: 14rem;
 	width: 14rem;
 	
 	&--about{
 		display: block;
 		margin: 0 auto;
-		border-radius: 50%;
-		height: 22rem;
-		width: 22rem;
+		border-radius: 12rem;
+		height: 30rem;
+		width: 30rem;
+		object-fit: cover;
 }
 &:hover {
     transform: translateY(-3px);
