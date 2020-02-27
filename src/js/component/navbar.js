@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const NavBar = () => {
 	return (
 		<nav className="navbar nav-style">
-			<Link to="https://martinezandy.com/">
+			<Link to="/">
 				<span className="navbar-brand h2">Andy Martinez</span>
 			</Link>
 			<div className="ml-auto p-2">
