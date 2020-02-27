@@ -32,9 +32,21 @@ export const Resume = () => {
 							Certifications
 						</h4>
 
-						<img src="https://github.com/amart31/andymartinez/blob/master/src/img/SSAlogo.png?raw=true" alt="PCSSA" className="pega-img mb-1" />
-						<img src="https://github.com/amart31/andymartinez/blob/master/src/img/PegaCertPro.png?raw=true" alt="Certified professional Pega" className="pega-img m-2" />
-						<img src="https://github.com/amart31/andymartinez/blob/master/src/img/PegaBAlogo.png?raw=true" alt="CBA logo" className="pega-img mt-1" />
+						<img
+							src="https://github.com/amart31/andymartinez/blob/master/src/img/SSAlogo.png?raw=true"
+							alt="PCSSA"
+							className="pega-img mb-1"
+						/>
+						<img
+							src="https://github.com/amart31/andymartinez/blob/master/src/img/PegaCertPro.png?raw=true"
+							alt="Certified professional Pega"
+							className="pega-img m-2"
+						/>
+						<img
+							src="https://github.com/amart31/andymartinez/blob/master/src/img/PegaBAlogo.png?raw=true"
+							alt="CBA logo"
+							className="pega-img mt-1"
+						/>
 					</div>
 				</div>
 
@@ -58,7 +70,12 @@ export const Resume = () => {
 						<div className="timeline">
 							<p className="timeline-p">
 								<Card className="card--resume">
-									<CardImg top className="card--resume--img" src="https://github.com/amart31/andymartinez/blob/master/src/img/pegaBG.png?raw=true" alt="Card image cap" />
+									<CardImg
+										top
+										className="card--resume--img"
+										src="https://github.com/amart31/andymartinez/blob/master/src/img/pegaBG.png?raw=true"
+										alt="Card image cap"
+									/>
 									<CardBody>
 										<CardTitle>Pega System Architect/Java Developer </CardTitle>
 										<CardTitle className="text-secondary">2019</CardTitle>
